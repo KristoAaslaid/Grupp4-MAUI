@@ -1,0 +1,41 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Grupp4_MAUI
+build_property.ProjectDir = D:\MemeReview\MAUI\Grupp4-MAUI\Grupp4-MAUI\
+
+[D:/MemeReview/MAUI/Grupp4-MAUI/Grupp4-MAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Grupp4_MAUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/MemeReview/MAUI/Grupp4-MAUI/Grupp4-MAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Grupp4_MAUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/MemeReview/MAUI/Grupp4-MAUI/Grupp4-MAUI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Grupp4_MAUI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/MemeReview/MAUI/Grupp4-MAUI/Grupp4-MAUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Grupp4_MAUI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/MemeReview/MAUI/Grupp4-MAUI/Grupp4-MAUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Grupp4_MAUI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
