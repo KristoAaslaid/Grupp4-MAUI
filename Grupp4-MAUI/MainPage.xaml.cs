@@ -1,12 +1,15 @@
-﻿namespace Grupp4_MAUI;
+﻿using Grupp4_MAUI.ViewModel;
+
+namespace Grupp4_MAUI;
 
 public partial class MainPage : ContentPage
 {
 	int count = 0;
 
-	public MainPage()
+	public MainPage(MainViewModel vm)
 	{
 		InitializeComponent();
+		BindingContext = vm;
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
