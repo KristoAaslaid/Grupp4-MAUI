@@ -1,0 +1,5 @@
+Kolmanda assignmenti ülesanne täitmise jaoks osutus vajalikuks vaadata kaks Microsofti poolt pakutud videot.
+
+Sündmuse lisamise jaoks oli vaja luua ViewModel kaust, kuhu oli vaja paigutada vajalik C# kood, mida saab kätte bindiga XAML failide kaudu. Selleks, et muuta koodi kirjutamist lihtsamaks sai alla tõmmatud "Community Library" extension, mis muutis koodi lühikesemaks ja lihtsamaks, kuna see automaatselt genereerib osa koodi.Koodi kirjutamise ajal sai märgatud, et Visual Studio genereerib automaatselt suhteliselt palju koodi sinu eest, ja see et käsk "Icommand" mida kasutati Microsofti poolt pakutud videotes on nüüd nimega "RelayCommand".
+
+Lehekülje lisamiseks sai lisatud Apshelli ruuter ja samuti pidi ViewModelisse paigutada vajalikud C# ja XAMLi failid (Mida oli vaja varem veel ära kirjutada). Projekti originaalsesse MainViewModeli faili sai lisatud uus käsk mis viiks uuele leheküljele, mis oli omakorda binditud XAMLi faili.
