@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.MainPage"
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
-             x:DataType="viewmodel:MainViewModel">
+             x:DataType="viewmodel:MainViewModel"
+             BackgroundColor="LightGrey">
 
     <ScrollView>
         <VerticalStackLayout
@@ -12,22 +13,15 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="ideal_world.jpg"
+                SemanticProperties.Description="Maailm siis kui kõik töötab"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, Grupp4, parim grupp!"
+                Text="Grupp4, Eksperimenteerimine!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
                 HorizontalOptions="Center" />
 
             <Button
@@ -37,7 +31,7 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <Entry Placeholder="Lmao"
+            <Entry Placeholder="Lisa midagi"
                    Text="{Binding Text}"
                    Grid.Row="1" />
 
