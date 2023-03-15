@@ -1,4 +1,5 @@
 ﻿using Grupp4_MAUI.ViewModel;
+using Plugin.Maui.Audio;
 
 namespace Grupp4_MAUI;
 
@@ -12,7 +13,7 @@ public partial class MainPage : ContentPage
 		BindingContext = vm;
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
 
@@ -22,6 +23,10 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Clicked {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+
+        var audioPlayer = AudioManager.Current.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("button-11.mp3"));
+
+        audioPlayer.Play();
+    }
 }
 
