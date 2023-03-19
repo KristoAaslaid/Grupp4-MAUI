@@ -1,0 +1,20 @@
+Plugin.Maui.Audio
+
+Kuna .NET MAUI ise helifaile ei toeta siis selleks, et kasutada heli faile tuleb kasutada pluginat "Plugin.Maui.Audio". See annab võimaluse esitada heli .NET MAUI 
+rakenduses
+
+Lisaks veel paar näidet mida sellega teha saab
+# Balance
+ - Saab muuta heli balansi ehk kas ja kui palju tuleb heli vasakult paremalt.
+ 
+# CanSeek
+ - Saab väärtuse, mis näitab, kas laaditud helifaili asukohta saab värskendada.
+ 
+# Duration
+ - Hangib heli pikkuse sekundites.
+ 
+ # IsPlaying
+ - Hangib väärtuse, mis näitab, kas praegu laaditud helifaili esitatakse.
+ 
+
+Kui on soovi veel teada siis vaadake plugini enda GitHubi lehekülge aadressil: https://github.com/jfversluis/Plugin.Maui.Audio
