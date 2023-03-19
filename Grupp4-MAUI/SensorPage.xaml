@@ -5,9 +5,15 @@
              Title="SensorPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Welcome to the Sensor Page!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Label 
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            x:Name="AccelLabel"/>
 
         <Button Text="Go back"
                 Command="{Binding GoBackCommand}" />
