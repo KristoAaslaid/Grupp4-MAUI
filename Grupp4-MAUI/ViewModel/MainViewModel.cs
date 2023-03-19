@@ -49,6 +49,11 @@ namespace Grupp4_MAUI.ViewModel
         {
             await Shell.Current.GoToAsync($"{nameof(Uuslehekulg)}?Text={s}");
         }
+        [RelayCommand]
+        async Task GoSensor()
+        {
+            await Shell.Current.GoToAsync($"{nameof(SensorPage)}");
+        }
 
     }
 }

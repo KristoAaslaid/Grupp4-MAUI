@@ -54,6 +54,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="SensorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Uuslehekulg.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

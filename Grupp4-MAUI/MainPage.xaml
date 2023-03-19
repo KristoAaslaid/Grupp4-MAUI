@@ -31,6 +31,13 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="SensorNavButton"
+                Text="To the Sensor Page"
+                SemanticProperties.Hint="Sends you to the SensorPage"
+                Command="{Binding GoSensorCommand}"
+                HorizontalOptions="Center" />
+
             <Entry Placeholder="Lisa midagi"
                    Text="{Binding Text}"
                    Grid.Row="1" />
