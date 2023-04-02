@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.SensorPage"
              Title="SensorPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Spacing="25">
         <Label 
             Text="Welcome to the Sensor Page!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Label 
-            Text=""
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            x:Name="AccelLabel"/>
+        <Button
+                x:Name="SensorCounterBtn"
+                Text="Orientation Check"
+                SemanticProperties.Hint="Check the orientation"
+                Clicked="OnSensorCounterClicked"
+                HorizontalOptions="Center" />
 
         <Button Text="Go back"
                 Command="{Binding GoBackCommand}" />
