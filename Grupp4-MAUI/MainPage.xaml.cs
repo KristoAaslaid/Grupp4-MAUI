@@ -23,5 +23,10 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+	private void ARButton(object sender, EventArgs e)
+	{
+		DependencyService.Get<IARApp>().LaunchAR(); // Launch AR
+	}
+
 }
 

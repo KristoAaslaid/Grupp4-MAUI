@@ -31,6 +31,13 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                x:Name="ARBtn"
+                Text="Enter AR"
+                SemanticProperties.Hint="Enters AR or smth"
+                Clicked="ARButton"
+                HorizontalOptions="Center" />
+
             <Entry Placeholder="Lisa midagi"
                    Text="{Binding Text}"
                    Grid.Row="1" />
