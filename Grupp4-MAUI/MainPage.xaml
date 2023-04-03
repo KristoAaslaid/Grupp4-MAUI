@@ -24,6 +24,16 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
+            <Label
+                Text="Hi hello"
+                x:Name="AccelText"
+                />
+            <Button
+                Text="Toggle Accelerometer"
+                x:Name="AccelToggle"
+                Clicked="ToggleAccelerometer"
+                />
+
             <Button
                 x:Name="CounterBtn"
                 Text="Click me"
