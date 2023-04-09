@@ -50,5 +50,11 @@ namespace Grupp4_MAUI.ViewModel
             await Shell.Current.GoToAsync($"{nameof(Uuslehekulg)}?Text={s}");
         }
 
+        [RelayCommand]
+        async Task NewPage()
+        {
+            await Shell.Current.GoToAsync(nameof(SecondPage));
+        }
+
     }
 }
