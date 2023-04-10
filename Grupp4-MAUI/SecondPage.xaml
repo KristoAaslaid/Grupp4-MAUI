@@ -25,6 +25,9 @@
         <Button Text="Read"
                 Clicked="ReadText" />
 
+        <Button Text="Video"
+                Clicked="TakeVideo" />
+
         <Label
             x:Name="fileReadResult"
             Text="{Binding Text}"/>

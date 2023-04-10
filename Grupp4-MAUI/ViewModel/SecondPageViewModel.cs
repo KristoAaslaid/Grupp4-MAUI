@@ -25,7 +25,7 @@ namespace Grupp4_MAUI.ViewModel
         string text;
 
         [RelayCommand]
-        public async Task<FileResult> PickAndShow(PickOptions options)
+        public async Task<FileResult> PickAndShow(PickOptions options) //Ei tee midagi praegu
         {
             try
             {
@@ -46,7 +46,6 @@ namespace Grupp4_MAUI.ViewModel
             {
                 // The user canceled or something went wrong
             }
-            text = ;
 
             return null;
         }
