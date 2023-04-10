@@ -29,8 +29,8 @@
                 Clicked="TakeVideo" />
 
         <Label
-            x:Name="fileReadResult"
-            Text="{Binding Text}"/>
+            x:Name="FileReadResult"
+            Text="Siia tuleb loetud tekst"/>
 
         <Button Text="Go back"
                 Command="{Binding GoBackCommand}" />

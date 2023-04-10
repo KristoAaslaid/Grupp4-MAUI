@@ -33,6 +33,12 @@
                 HorizontalOptions="Center" />
 
             <Button
+                x:Name="TestBtn"
+                Text="Test button"
+                Clicked="TestValue"
+                HorizontalOptions="Center" />
+
+            <Button
                 x:Name="SecondPageBtn"
                 Text="Second page"
                 SemanticProperties.Hint="Enters AR or smth"

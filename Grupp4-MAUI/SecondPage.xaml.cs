@@ -31,11 +31,13 @@ public partial class SecondPage : ContentPage
         {
             currentTheme = AppTheme.Dark;
             Application.Current.UserAppTheme = AppTheme.Dark;
+            Preferences.Default.Set("themeValue", "Dark");
         }
         else
         {
             currentTheme = AppTheme.Light;
             Application.Current.UserAppTheme = AppTheme.Light;
+            Preferences.Default.Set("themeValue", "Light");
         }
     }
 
@@ -53,7 +55,7 @@ public partial class SecondPage : ContentPage
         }
     }
 
-    private async void ReadText(object sender, EventArgs e) //Saab valida, aga rohkem ei tee
+    private async void ReadText(object sender, EventArgs e)
     {
         var result = await FilePicker.Default.PickAsync(new PickOptions
         {
@@ -64,6 +66,9 @@ public partial class SecondPage : ContentPage
             return;
 
         var stream = await result.OpenReadAsync();
+        using var reader = new StreamReader(stream);
+        var text = await reader.ReadToEndAsync();
+        FileReadResult.Text = text;
 
     }
     async void TakeVideo(object sender, EventArgs e)

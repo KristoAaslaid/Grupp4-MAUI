@@ -5,12 +5,22 @@ namespace Grupp4_MAUI;
 public partial class MainPage : ContentPage
 {
 	int count = 0;
+    string themeValue = Preferences.Default.Get("themeValue", "Unknown");
 
-	public MainPage(MainViewModel vm)
+    public MainPage(MainViewModel vm)
 	{
 		InitializeComponent();
 		BindingContext = vm;
-	}
+        //Theme of app depending on user preferences
+		if (themeValue == "Dark")
+		{
+            Application.Current.UserAppTheme = AppTheme.Dark;
+        }
+        else
+		{
+            Application.Current.UserAppTheme = AppTheme.Light;
+        }
+    }
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
@@ -24,7 +34,13 @@ public partial class MainPage : ContentPage
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 
+    private void TestValue(object sender, EventArgs e)
+    {
+        string themeValue = Preferences.Default.Get("themeValue", "Unknown");
+        TestBtn.Text = themeValue;
 
+        SemanticScreenReader.Announce(TestBtn.Text);
+    }
 
 }
 
