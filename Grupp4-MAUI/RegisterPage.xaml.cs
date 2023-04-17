@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Json;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace Grupp4_MAUI;
 
@@ -29,12 +30,12 @@ public partial class RegisterPage : ContentPage
 
         var details = new User()
         {
-            email = Username.Text,
+            email = Email.Text,
             password = Password.Text,
         };
 
         var body = JsonConvert.SerializeObject(details);
-        var content = new StringContent(body);
+        var content = new StringContent(body, Encoding.UTF8, "application/json");
 
         var httpResponse = await _Client.PostAsync(url, content);
 
@@ -44,15 +45,14 @@ public partial class RegisterPage : ContentPage
         } else
         {
             Error.Text = httpResponse.Content.ReadAsStringAsync().Result;
+            //Error.Text = body;
         }
-    }
-    void OnEntryTextChanged(object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
-    {
-        password = Password.Text;
-        email = Username.Text;
     }
     public class User
     {
+
+        [JsonProperty("username")]
+        public string username { get; set; }
 
         [JsonProperty("email")]
         public string email { get; set; }

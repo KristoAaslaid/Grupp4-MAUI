@@ -9,14 +9,13 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label x:Name="Error"
-               Text="MMM"/>
+               Text=""/>
         <Entry Placeholder="Email"
-                   Text="{Binding emailText}"
+                   Text=""
                    Grid.Row="1"
-                   x:Name="Username"/>
-
+                   x:Name="Email"/>
         <Entry Placeholder="Password"
-                   Text="{Binding passwordText}"
+                   Text=""
                    Grid.Row="1"
                    IsPassword="true"
                    x:Name="Password"/>

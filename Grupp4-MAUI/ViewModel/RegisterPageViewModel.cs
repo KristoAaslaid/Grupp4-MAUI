@@ -18,8 +18,5 @@ namespace Grupp4_MAUI.ViewModel
 
         }
 
-        string emailText;
-        string passwordText;
-
     }
 }
