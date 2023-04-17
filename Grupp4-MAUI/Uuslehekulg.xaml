@@ -1,17 +1,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.Uuslehekulg"
-             BackgroundColor="{DynamicResource SecondaryColor}">
+             BackgroundColor="LightGrey">
     <StackLayout>
-        <Label Text="Team Members"/>
+        <Label Text="Users" TextColor="Black"/>
         <ListView x:Name="userList" 
                   HeightRequest="400"
                   >
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ImageCell ImageSource="{Binding AvatarURI}" Text="{Binding FullName}" Detail="{Binding Email}"/>
+                    <ImageCell ImageSource="{Binding AvatarURI}" Text="{Binding FullName}" Detail="{Binding Email}" TextColor="Black" DetailColor="Black"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Text="Go back"
+            Command="{Binding GoBackCommand}" />
     </StackLayout>
 </ContentPage>

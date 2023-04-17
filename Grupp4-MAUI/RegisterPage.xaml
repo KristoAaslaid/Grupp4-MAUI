@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grupp4_MAUI.RegisterPage"
+             Title="Register">
+    <VerticalStackLayout>
+        <Label 
+            Text="Registreeri ennast kasutajaks!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label x:Name="Error"
+               Text="MMM"/>
+        <Entry Placeholder="Email"
+                   Text="{Binding emailText}"
+                   Grid.Row="1"
+                   x:Name="Username"/>
+
+        <Entry Placeholder="Password"
+                   Text="{Binding passwordText}"
+                   Grid.Row="1"
+                   IsPassword="true"
+                   x:Name="Password"/>
+        <Button
+            Text="Registreeri"
+            Clicked="RegisterAccountAsync"/>
+    </VerticalStackLayout>
+</ContentPage>

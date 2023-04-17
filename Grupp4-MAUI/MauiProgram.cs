@@ -23,6 +23,9 @@ public static class MauiProgram
         builder.Services.AddTransient<Uuslehekulg>(); //AddTransient uute lehekülgede puhul
         builder.Services.AddTransient<UuslehekulgViewModel>();
 
+        builder.Services.AddTransient<RegisterPage>(); //AddTransient uute lehekülgede puhul
+        builder.Services.AddTransient<RegisterPageViewModel>();
+
 #if DEBUG
         builder.Logging.AddDebug();
 #endif

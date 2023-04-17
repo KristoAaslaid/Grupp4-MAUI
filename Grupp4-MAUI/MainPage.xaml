@@ -41,10 +41,15 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <BoxView
+                HeightRequest="1" BackgroundColor="LightGrey"/>
             <Button
-                Text="Kasutajad"
+                Text="View users"
                 Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=TapCommand}"
                 />
+            <Button
+                Text="Register account"
+                Command="{Binding GoToRegisterCommand}" />
 
             <Entry Placeholder="Lisa midagi"
                    Text="{Binding Text}"

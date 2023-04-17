@@ -15,7 +15,6 @@ namespace Grupp4_MAUI.ViewModel
 
         public MainViewModel()
         {
-            Items = new ObservableCollection<string>();
         }
 
         [ObservableProperty]
@@ -27,27 +26,24 @@ namespace Grupp4_MAUI.ViewModel
         [RelayCommand]
         void Add()
         {
-            if (string.IsNullOrWhiteSpace(Text))
-                return;
 
-            Items.Add(Text);
-            //Add our item
-            Text = string.Empty;
         }
 
         [RelayCommand]
         void Delete(string s)
         {
-            if (Items.Contains(s))
-            {
-                Items.Remove(s);
-            }
         }
 
         [RelayCommand]
         async Task Tap(string s)
         {
             await Shell.Current.GoToAsync($"{nameof(Uuslehekulg)}?Text={s}");
+        }
+
+        [RelayCommand]
+        async Task GoToRegister()
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterPage));
         }
 
     }
