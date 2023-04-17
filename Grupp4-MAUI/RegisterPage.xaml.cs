@@ -22,9 +22,6 @@ public partial class RegisterPage : ContentPage
     private const string url = "https://reqres.in/api/register";
     private HttpClient _Client = new HttpClient();
 
-    string password;
-    string email;
-
     private async void RegisterAccountAsync(object sender, EventArgs e)
     {
 
@@ -44,7 +41,8 @@ public partial class RegisterPage : ContentPage
             Error.Text = "Successfully registered!";
         } else
         {
-            Error.Text = httpResponse.Content.ReadAsStringAsync().Result;
+            RegisterError responseData = JsonConvert.DeserializeObject<RegisterError>(await httpResponse.Content.ReadAsStringAsync());
+            Error.Text = responseData.error;
             //Error.Text = body;
         }
     }
@@ -59,6 +57,14 @@ public partial class RegisterPage : ContentPage
 
         [JsonProperty("password")]
         public string password { get; set; }
+
+    }
+
+    public class RegisterError
+    {
+
+        [JsonProperty("error")]
+        public string error { get; set; }
 
     }
 }
