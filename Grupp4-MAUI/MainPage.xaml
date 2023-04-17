@@ -41,6 +41,11 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button
+                Text="Kasutajad"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=TapCommand}"
+                />
+
             <Entry Placeholder="Lisa midagi"
                    Text="{Binding Text}"
                    Grid.Row="1" />
