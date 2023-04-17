@@ -5,7 +5,7 @@
              Title="Register">
     <VerticalStackLayout>
         <Label 
-            Text="Registreeri ennast kasutajaks!"
+            Text="Sign up!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         <Label x:Name="Error"
@@ -20,7 +20,7 @@
                    IsPassword="true"
                    x:Name="Password"/>
         <Button
-            Text="Registreeri"
+            Text="Register!"
             Clicked="RegisterAccountAsync"/>
     </VerticalStackLayout>
 </ContentPage>

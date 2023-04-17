@@ -5,7 +5,7 @@
     <StackLayout>
         <Label Text="Users" TextColor="Black"/>
         <ListView x:Name="userList" 
-                  HeightRequest="400"
+                  HeightRequest="650"
                   >
             <ListView.ItemTemplate>
                 <DataTemplate>
