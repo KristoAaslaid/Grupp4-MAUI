@@ -12,28 +12,5 @@
                 FontSize="32"
                 HorizontalOptions="Center" />
 
-        <Button Text="Dark mode"
-                Clicked="DarkMode" />
-
-        <Entry Placeholder="Kirjuta siia midagi ja see läheb txt faili"
-               x:Name="TextToSave"
-               Grid.Row="1" />
-
-        <Button Text="Save"
-                Clicked="SaveText" />
-
-        <Button Text="Read"
-                Clicked="ReadText" />
-
-        <Button Text="Video"
-                Clicked="TakeVideo" />
-
-        <Label
-            x:Name="FileReadResult"
-            Text="Siia tuleb loetud tekst"/>
-
-        <Button Text="Go back"
-                Command="{Binding GoBackCommand}" />
-
     </VerticalStackLayout>
 </ContentPage>

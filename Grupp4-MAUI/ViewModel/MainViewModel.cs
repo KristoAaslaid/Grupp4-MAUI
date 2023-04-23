@@ -18,40 +18,5 @@ namespace Grupp4_MAUI.ViewModel
 
         }
 
-        [ObservableProperty]
-        ObservableCollection<string> _items;
-
-        [ObservableProperty]
-        string text;
-
-        [RelayCommand]
-        void Add()
-        {
-
-        }
-
-        [RelayCommand]
-        void Delete(string s)
-        {
-
-        }
-
-        [RelayCommand]
-        async Task Tap(string s)
-        {
-            await Shell.Current.GoToAsync($"{nameof(Uuslehekulg)}?Text={s}");
-        }
-
-        [RelayCommand]
-        async Task NewPage()
-        {
-            await Shell.Current.GoToAsync(nameof(SecondPage));
-        }
-
-        [RelayCommand]
-        async Task GoToRegister()
-        {
-            await Shell.Current.GoToAsync(nameof(RegisterPage));
-        }
     }
 }

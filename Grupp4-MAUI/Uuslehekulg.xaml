@@ -11,18 +11,5 @@
             FontSize="30"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
-        <Label Text="Users" TextColor="Black"/>
-        <ListView x:Name="userList" 
-                  HeightRequest="650"
-                  >
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ImageCell ImageSource="{Binding AvatarURI}" Text="{Binding FullName}" Detail="{Binding Email}" TextColor="Black" DetailColor="Black"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Go back"
-            Command="{Binding GoBackCommand}" />
     </VerticalStackLayout>
 </ContentPage>

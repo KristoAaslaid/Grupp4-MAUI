@@ -15,14 +15,6 @@ namespace Grupp4_MAUI.ViewModel
 {
     public partial class SecondPageViewModel: ObservableObject
     {
-        [RelayCommand]
-        async Task GoBack()
-        {
-            await Shell.Current.GoToAsync("..");
-        }
-
-        [ObservableProperty]
-        string text;
 
     }
 }

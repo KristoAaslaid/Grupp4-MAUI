@@ -8,20 +8,5 @@
             Text="Sign up!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label x:Name="Error"
-               Text=""/>
-        <Entry Placeholder="Email"
-                   Text=""
-                   Grid.Row="1"
-                   x:Name="Email"/>
-
-        <Entry Placeholder="Password"
-                   Text=""
-                   Grid.Row="1"
-                   IsPassword="true"
-                   x:Name="Password"/>
-        <Button
-            Text="Register!"
-            Clicked="RegisterAccountAsync"/>
     </VerticalStackLayout>
 </ContentPage>
