@@ -1,4 +1,5 @@
 ﻿using Grupp4_MAUI.ViewModel;
+using Plugin.Maui.Audio;
 
 namespace Grupp4_MAUI;
 
@@ -22,7 +23,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private async void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
 
@@ -32,7 +33,11 @@ public partial class MainPage : ContentPage
 			CounterBtn.Text = $"Clicked {count} times";
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+
+        var audioPlayer = AudioManager.Current.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("button-11.mp3"));
+
+        audioPlayer.Play();
+    }
 
     private void TestValue(object sender, EventArgs e)
     {
@@ -42,5 +47,32 @@ public partial class MainPage : ContentPage
         SemanticScreenReader.Announce(TestBtn.Text);
     }
 
+    public void ToggleAccelerometer(object sender, EventArgs e)
+    {
+        if (Accelerometer.Default.IsSupported)
+        {
+            if (!Accelerometer.Default.IsMonitoring)
+            {
+                // Turn on accelerometer
+                Accelerometer.Default.ReadingChanged += Accelerometer_ReadingChanged;
+                Accelerometer.Default.Start(SensorSpeed.UI);
+                AccelToggle.Text = "Reading";
+            }
+            else
+            {
+                // Turn off accelerometer
+                Accelerometer.Default.Stop();
+                Accelerometer.Default.ReadingChanged -= Accelerometer_ReadingChanged;
+                AccelToggle.Text = "Not reading";
+            }
+        }
+    }
+
+    private void Accelerometer_ReadingChanged(object sender, AccelerometerChangedEventArgs e)
+    {
+        // Update UI Label with accelerometer state
+        AccelText.TextColor = Colors.Green;
+        AccelText.Text = $"Accel: {e.Reading}";
+    }
 }
 

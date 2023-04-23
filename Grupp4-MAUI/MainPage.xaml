@@ -83,6 +83,24 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Label
+                Text="Hi hello"
+                x:Name="AccelText"
+                />
+            <Button
+                Text="Toggle Accelerometer"
+                x:Name="AccelToggle"
+                Clicked="ToggleAccelerometer"
+                />
+            <BoxView
+                HeightRequest="1" BackgroundColor="LightGrey"/>
+            <Button
+                Text="View users"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=TapCommand}"
+                />
+            <Button
+                Text="Register account"
+                Command="{Binding GoToRegisterCommand}" />
         </VerticalStackLayout>
     </ScrollView>
 
