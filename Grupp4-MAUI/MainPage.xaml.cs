@@ -12,5 +12,10 @@ public partial class MainPage : ContentPage
 		BindingContext = vm;
     }
 
+    private async void NavigateToFirstAid(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FirstAid());
+    }
+
 }
 

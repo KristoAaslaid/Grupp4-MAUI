@@ -18,6 +18,9 @@
                 SemanticProperties.Description="Maailm siis kui kõik töötab"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
+
+            <Button Text="FirstAid" Clicked="NavigateToFirstAid" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
