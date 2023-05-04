@@ -12,5 +12,27 @@ public partial class MainPage : ContentPage
 		BindingContext = vm;
     }
 
+    private async void NavigateToFirstAid(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new FirstAid());
+    }
+
+    private async void NavigateToSituations(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Situations());
+    }
+
+    private async void NavigateToCompass(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Compass());
+    }
+
+    private async void NavigateToSensors(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Sensors());
+    }
+
+
+
 }
 
