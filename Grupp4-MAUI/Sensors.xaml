@@ -8,5 +8,43 @@
             Text="Sensors still in development"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button
+                Text="Thermometer" Clicked="NavigateToThermometer"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60"/>
+
+        <Button
+                Text="Accelerometer" Clicked="NavigateToAccelerometer"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60"/>
+
+        <Button
+                Text="Barometer" Clicked="NavigateToBarometer"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60"/>
+
+        <Button
+                Text="HumiditySensor" Clicked="NavigateToHumiditySensor"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60"/>
+
+        <Button
+                Text="StepDetector" Clicked="NavigateToStepDetector"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60"/>
+
+
+
     </VerticalStackLayout>
 </ContentPage>
