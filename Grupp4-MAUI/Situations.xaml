@@ -26,6 +26,7 @@
 
             <Button
                 Text="In a Forest" Grid.Row="0" Grid.Column="0"
+                Clicked="NavigateToForest"
                 Margin="0,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
@@ -42,6 +43,7 @@
 
             <Button
                 Text="On thin Ice" Grid.Row="0" Grid.Column="1"
+                Clicked="NavigateToIce"
                 Margin="0,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
@@ -57,6 +59,7 @@
 
             <Button
                 Text="In a Swamp" Grid.Row="1" Grid.Column="0"
+                Clicked="NavigateToSwamp"
                 Margin="0,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
@@ -64,13 +67,14 @@
 
             <Image
                 Source="mountain.jpg" Grid.Row="1" Grid.Column="1"
-                SemanticProperties.Description="Kui oled õhukesel jääl"
+                SemanticProperties.Description="Kui oled mäel"
                 HeightRequest="200"
                 Margin="0,0,0,0"
                 HorizontalOptions="Center" />
 
             <Button
-                Text="In a Swamp" Grid.Row="1" Grid.Column="1"
+                Text="In a Mountain" Grid.Row="1" Grid.Column="1"
+                Clicked="NavigateToMountain"
                 Margin="0,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
