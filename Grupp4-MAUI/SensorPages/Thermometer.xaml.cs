@@ -6,4 +6,8 @@ public partial class Thermometer : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }

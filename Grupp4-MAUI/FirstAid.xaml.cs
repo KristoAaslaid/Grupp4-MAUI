@@ -6,4 +6,9 @@ public partial class FirstAid : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
 }

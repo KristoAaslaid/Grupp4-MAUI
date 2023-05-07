@@ -32,5 +32,12 @@
             Text="6) Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
             Padding="0,20,0,0" />
 
+        <Button
+             Text="To Main Page" Clicked="BackButton"
+             Margin="0,0,0,0"
+             BackgroundColor="#4166F5"
+             TextColor="White"
+             HeightRequest="100"/>
+
     </VerticalStackLayout>
 </ContentPage>

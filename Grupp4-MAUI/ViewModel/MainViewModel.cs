@@ -18,5 +18,17 @@ namespace Grupp4_MAUI.ViewModel
 
         }
 
+        [RelayCommand]
+        async Task GoBack()
+        {
+            await Shell.Current.GoToAsync("..");
+        }
+
+        [RelayCommand]
+        async Task GoToSensors()
+        {
+            await Shell.Current.GoToAsync("Sensors");
+        }
+
     }
 }

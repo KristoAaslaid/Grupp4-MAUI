@@ -29,5 +29,9 @@ public partial class Sensors : ContentPage
     {
         await Navigation.PushAsync(new StepDetector());
     }
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
 
 }

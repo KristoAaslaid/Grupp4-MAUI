@@ -8,5 +8,13 @@
             Text="Siia tuleb termomeeter"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button
+             Text="Back" Clicked="BackButton"
+             Margin="0,0,0,0"
+             BackgroundColor="#4166F5"
+             TextColor="White"
+             HeightRequest="100"/>
+        
     </VerticalStackLayout>
 </ContentPage>

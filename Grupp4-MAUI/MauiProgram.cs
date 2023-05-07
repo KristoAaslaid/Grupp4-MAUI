@@ -23,7 +23,7 @@ public static class MauiProgram
         //Meie lisatud osa
         builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<MainViewModel>();
-
+        /*
         builder.Services.AddTransient<Uuslehekulg>(); //AddTransient uute lehekülgede puhul
         builder.Services.AddTransient<UuslehekulgViewModel>();
 
@@ -32,6 +32,7 @@ public static class MauiProgram
 
         builder.Services.AddTransient<RegisterPage>();
         builder.Services.AddTransient<RegisterPageViewModel>();
+        */
 
 #if DEBUG
         builder.Logging.AddDebug();

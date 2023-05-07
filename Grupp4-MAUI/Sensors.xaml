@@ -2,49 +2,84 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.Sensors"
+             xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
+             x:DataType="viewmodel:MainViewModel"
              Title="Sensors">
     <VerticalStackLayout>
         <Label 
             Text="Sensors still in development"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="200" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        <Button
+            <Button
                 Text="Thermometer" Clicked="NavigateToThermometer"
+                Grid.Row="0" Grid.Column="0"
                 Margin="0,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
-                HeightRequest="60"/>
+                HeightRequest="100"/>
 
-        <Button
+            <Button
                 Text="Accelerometer" Clicked="NavigateToAccelerometer"
+                Grid.Row="0" Grid.Column="1"
                 Margin="0,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
-                HeightRequest="60"/>
+                HeightRequest="100"/>
 
-        <Button
+            <Button
+                Text="Who knows?" Clicked="NavigateToStepDetector"
+                Grid.Row="1" Grid.Column="0"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="100"/>
+
+            <Button
                 Text="Barometer" Clicked="NavigateToBarometer"
+                Grid.Row="1" Grid.Column="1"
                 Margin="0,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
-                HeightRequest="60"/>
+                HeightRequest="100"/>
 
-        <Button
+            <Button
                 Text="HumiditySensor" Clicked="NavigateToHumiditySensor"
+                Grid.Row="2" Grid.Column="0"
                 Margin="0,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
-                HeightRequest="60"/>
+                HeightRequest="100"/>
+
+            <Button
+                Text="StepDetector" Clicked="NavigateToStepDetector"
+                Grid.Row="2" Grid.Column="1"
+                Margin="0,0,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="100"/>
+
+
+        </Grid>
 
         <Button
-                Text="StepDetector" Clicked="NavigateToStepDetector"
-                Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
-                TextColor="White"
-                HeightRequest="60"/>
-
-
+             Text="To Main Page" Clicked="BackButton"
+             Margin="0,0,0,0"
+             BackgroundColor="#4166F5"
+             TextColor="White"
+             HeightRequest="100"/>
 
     </VerticalStackLayout>
 </ContentPage>

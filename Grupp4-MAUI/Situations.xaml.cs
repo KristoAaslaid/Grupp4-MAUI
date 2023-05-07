@@ -27,4 +27,9 @@ public partial class Situations : ContentPage
 
     }
 
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
+
 }

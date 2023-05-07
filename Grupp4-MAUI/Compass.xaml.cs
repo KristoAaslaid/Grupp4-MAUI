@@ -6,4 +6,9 @@ public partial class Compass : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+    }
 }
