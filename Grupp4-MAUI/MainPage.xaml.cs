@@ -24,7 +24,7 @@ public partial class MainPage : ContentPage
 
     private async void NavigateToCompass(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Compass());
+        await Navigation.PushAsync(new CompassPage());
     }
 
     private async void NavigateToSensors(object sender, EventArgs e)
