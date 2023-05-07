@@ -4,7 +4,10 @@
              x:Class="Grupp4_MAUI.FirstAid"
              Title="FirstAid">
     
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Start">
         
         <Label 
             Text="First aid Basics"
@@ -14,22 +17,22 @@
             FontSize="Large"/>
 
         <Label
-            Text="1) Stop bleeding by applying pressure to the wound and elevating the affected area."
+            Text="Stop bleeding by applying pressure to the wound and elevating the affected area."
             Padding="0,40,0,0"/>
         <Label
-            Text="2) Treat injuries and wounds by cleaning and dressing them as soon as possible."
+            Text="Treat injuries and wounds by cleaning and dressing them as soon as possible."
             Padding="0,20,0,0" />
         <Label
-            Text="3) Treat burns by cooling them with cool water and covering them with a clean, dry cloth."
+            Text="Treat burns by cooling them with cool water and covering them with a clean, dry cloth."
             Padding="0,20,0,0" />
         <Label
-            Text="4) Stay hydrated by drinking plenty of water and purifying any water sources you find."
+            Text="Stay hydrated by drinking plenty of water and purifying any water sources you find."
             Padding="0,20,0,0" />
         <Label
-            Text="5) Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets."
+            Text="Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets."
             Padding="0,20,0,0" />
         <Label
-            Text="6) Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
+            Text="Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
             Padding="0,20,0,0" />
 
         <Button

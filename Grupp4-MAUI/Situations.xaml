@@ -8,8 +8,8 @@
         <Grid>
             
             <Grid.RowDefinitions>
-                <RowDefinition Height="400" />
-                <RowDefinition Height="400" />
+                <RowDefinition Height="300" />
+                <RowDefinition Height="300" />
             </Grid.RowDefinitions>
             
             <Grid.ColumnDefinitions>
@@ -21,30 +21,29 @@
                 Source="forest.jpg" Grid.Row="0" Grid.Column="0"
                 SemanticProperties.Description="Kui oled metsas eksinud"
                 HeightRequest="200"
-                Margin="0,0,0,0"
+                Margin="5"
                 HorizontalOptions="Center" />
 
             <Button
                 Text="In a Forest" Grid.Row="0" Grid.Column="0"
                 Clicked="NavigateToForest"
-                Margin="0,300,0,0"
+                Margin="0,300,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
             
 
-
             <Image
                 Source="ice_sheet.jpg" Grid.Row="0" Grid.Column="1"
                 SemanticProperties.Description="Kui oled õhukesel jääl"
                 HeightRequest="200"
-                Margin="0,0,0,0"
+                Margin="5"
                 HorizontalOptions="Center" />
 
             <Button
                 Text="On thin Ice" Grid.Row="0" Grid.Column="1"
                 Clicked="NavigateToIce"
-                Margin="0,300,0,0"
+                Margin="5,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
@@ -54,13 +53,13 @@
                 Source="swamp.jpg" Grid.Row="1" Grid.Column="0"
                 SemanticProperties.Description="Kui oled õhukesel jääl"
                 HeightRequest="200"
-                Margin="0,0,0,0"
+                Margin="5"
                 HorizontalOptions="Center" />
 
             <Button
                 Text="In a Swamp" Grid.Row="1" Grid.Column="0"
                 Clicked="NavigateToSwamp"
-                Margin="0,300,0,0"
+                Margin="0,300,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
@@ -69,13 +68,13 @@
                 Source="mountain.jpg" Grid.Row="1" Grid.Column="1"
                 SemanticProperties.Description="Kui oled mäel"
                 HeightRequest="200"
-                Margin="0,0,0,0"
+                Margin="5"
                 HorizontalOptions="Center" />
 
             <Button
                 Text="In a Mountain" Grid.Row="1" Grid.Column="1"
                 Clicked="NavigateToMountain"
-                Margin="0,300,0,0"
+                Margin="5,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
@@ -86,7 +85,7 @@
 
         <Button
              Text="To Main Page" Clicked="BackButton"
-             Margin="0,0,0,0"
+             Margin="0,60,0,0"
              BackgroundColor="#4166F5"
              TextColor="White"
              HeightRequest="100"/>

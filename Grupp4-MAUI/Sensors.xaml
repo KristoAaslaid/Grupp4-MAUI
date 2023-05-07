@@ -5,7 +5,12 @@
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
              x:DataType="viewmodel:MainViewModel"
              Title="Sensors">
-    <VerticalStackLayout>
+    
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Start">
+        
         <Label 
             Text="Sensors still in development"
             VerticalOptions="Center" 
@@ -26,7 +31,7 @@
             <Button
                 Text="Thermometer" Clicked="NavigateToThermometer"
                 Grid.Row="0" Grid.Column="0"
-                Margin="0,0,0,0"
+                Margin="0,0,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
@@ -34,7 +39,7 @@
             <Button
                 Text="Accelerometer" Clicked="NavigateToAccelerometer"
                 Grid.Row="0" Grid.Column="1"
-                Margin="0,0,0,0"
+                Margin="5,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
@@ -42,7 +47,7 @@
             <Button
                 Text="Who knows?" Clicked="NavigateToStepDetector"
                 Grid.Row="1" Grid.Column="0"
-                Margin="0,0,0,0"
+                Margin="0,0,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
@@ -50,7 +55,7 @@
             <Button
                 Text="Barometer" Clicked="NavigateToBarometer"
                 Grid.Row="1" Grid.Column="1"
-                Margin="0,0,0,0"
+                Margin="5,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
@@ -58,7 +63,7 @@
             <Button
                 Text="HumiditySensor" Clicked="NavigateToHumiditySensor"
                 Grid.Row="2" Grid.Column="0"
-                Margin="0,0,0,0"
+                Margin="0,0,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
@@ -66,7 +71,7 @@
             <Button
                 Text="StepDetector" Clicked="NavigateToStepDetector"
                 Grid.Row="2" Grid.Column="1"
-                Margin="0,0,0,0"
+                Margin="5,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="100"/>
