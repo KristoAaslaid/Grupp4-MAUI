@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grupp4_MAUI.GPS"
+             Title="GPS">
+    
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Start">
+        
+        <Label 
+            Text="GPS is still in development"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+
+        <Button
+            Text="Show current location" Clicked="GetLocation"
+            BackgroundColor="#4166F5"
+            TextColor="White"
+            HeightRequest="60"/>
+
+    </VerticalStackLayout>
+</ContentPage>

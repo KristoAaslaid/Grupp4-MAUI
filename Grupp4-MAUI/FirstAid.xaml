@@ -4,36 +4,142 @@
              x:Class="Grupp4_MAUI.FirstAid"
              Title="FirstAid">
     
+    <!-- Css, et sisus ei puudutaks telefoni 22ri ja oleks ilusam -->
+    
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
+        
+        <!-- Lehe pealkiri suuremas tekstis lehe keskel -->
         
         <Label 
             Text="First aid Basics"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"
-            FontSize="Large"/>
+            FontSize="32"/>
+        
+        
+        <!-- Verejooksu peatamise 101 T2htsamad osad boldiga -->
+
 
         <Label
             Text="Stop bleeding by applying pressure to the wound and elevating the affected area."
-            Padding="0,40,0,0"/>
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Stop bleeding " FontAttributes="Bold" />
+                    <Span Text="by " />
+                    <Span Text="apply" FontAttributes="Bold" />
+                    <Span Text="ing " />
+                    <Span Text="pressure to " FontAttributes="Bold" />
+                    <Span Text="the " />
+                    <Span Text="wound" FontAttributes="Bold" />
+                    <Span Text=" and elevating the affected area." />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <!-- Peata verejoos kiiremas korras -->
+
         <Label
             Text="Treat injuries and wounds by cleaning and dressing them as soon as possible."
-            Padding="0,20,0,0" />
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Treat injuries " FontAttributes="Bold" />
+                    <Span Text="and " />
+                    <Span Text="wounds " FontAttributes="Bold" />
+                    <Span Text="by " />
+                    <Span Text="clean" FontAttributes="Bold" />
+                    <Span Text="ing and " />
+                    <Span Text="dress" FontAttributes="Bold" />
+                    <Span Text="ing as soon as possible " />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <!-- Hoolitse p6letus haavade eest -->
+        <!-- Lisa info miskip2rast ei taha Formatted string t22tada vahel isegi kui on eelmisega t2pselt sama saab erroriks value can not be null-->
+        <!-- J2relduseks saan 6elda, et .NET MAUI on loll kuna ta ise ka ei tea mida tahab -->
+
         <Label
             Text="Treat burns by cooling them with cool water and covering them with a clean, dry cloth."
-            Padding="0,20,0,0" />
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Treat burns by cooling " FontAttributes="Bold" />
+                    <Span Text="them with cool water and " />
+                    <Span Text="cover" FontAttributes="Bold" />
+                    <Span Text="ing " />
+                    <Span Text="them " FontAttributes="Bold" />
+                    <Span Text="with a clean, dry cloth. " />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <!-- Joo vett e püsi hüdrateeritud-->
+
         <Label
             Text="Stay hydrated by drinking plenty of water and purifying any water sources you find."
-            Padding="0,20,0,0" />
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Stay hydrated " FontAttributes="Bold" />
+                    <Span Text="by " />
+                    <Span Text="drink" FontAttributes="Bold" />
+                    <Span Text="ing plenty of " />
+                    <Span Text="water" FontAttributes="Bold" />
+                    <Span Text="and " />
+                    <Span Text="purify" FontAttributes="Bold" />
+                    <Span Text="ing any " />
+                    <Span Text="water" FontAttributes="Bold" />
+                    <Span Text="sources you find " />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <!-- Ara kanna m2rgi riideid -->
+
         <Label
             Text="Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets."
-            Padding="0,20,0,0" />
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Treat hypothermia " FontAttributes="Bold" />
+                    <Span Text="by " />
+                    <Span Text="remove" FontAttributes="Bold" />
+                    <Span Text="ing " />
+                    <Span Text="wet clothing " FontAttributes="Bold" />
+                    <Span Text="and " />
+                    <Span Text="replace" FontAttributes="Bold" />
+                    <Span Text="ing it " />
+                    <Span Text="with dry clothes " FontAttributes="Bold" />
+                    <Span Text="or " />
+                    <Span Text="blankets" FontAttributes="Bold" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        
+        <!-- Ara sea ennast ise ohtu -->
+
         <Label
             Text="Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
-            Padding="0,20,0,0" />
+            Padding="0,20,0,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Stay safe " FontAttributes="Bold" />
+                    <Span Text="by " />
+                    <Span Text="avoid" FontAttributes="Bold" />
+                    <Span Text="ing " />
+                    <Span Text="risky behaviors, " FontAttributes="Bold" />
+                    <Span Text="staying with your group, and signaling for help if needed" />
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <!-- Tagasi Nupp -->
 
         <Button
              Text="To Main Page" Clicked="BackButton"

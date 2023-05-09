@@ -32,5 +32,10 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new Sensors());
     }
 
+    private async void NavigateToGPS(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new GPS());
+    }
+
 }
 
