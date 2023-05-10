@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Grupp4_MAUI.GPS"
-             Title="GPS">
-
+             x:Class="Grupp4_MAUI.SituationPages.TropicalForest"
+             Title="TropicalForest">
+    
     <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
 
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
-        
-        <!-- Lehe pealkiri -->
-        
+
+
         <Label 
-            Text="Your exact location"
-            Margin="0, 30, 0, 0"
+            Text="Welcome to Tropical Forest!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        
-        <!-- Nupp mis näitab kasutaja täpset asukohta Latitudis ja Longitudis-->
 
         <Button
-            Text="Show current location" Clicked="GetLocation"
-            BackgroundColor="#4166F5"
-            TextColor="White"
-            HeightRequest="60"/>
-
+             Text="Back" Clicked="BackButton"
+             Margin="0,0,0,0"
+             BackgroundColor="#4166F5"
+             TextColor="White"
+             HeightRequest="100"/>
     </VerticalStackLayout>
 </ContentPage>

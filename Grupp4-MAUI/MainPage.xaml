@@ -8,10 +8,15 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
 
     <ScrollView>
+
+        <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Start">
+            
+            <!-- Kas appi logo või siis mingi rahustav pilt? -->
 
             <Image
                 Source="keep_calm.jpg"
@@ -19,6 +24,8 @@
                 HeightRequest="200"
                 Margin="0,50,0,0"
                 HorizontalOptions="Center" />
+            
+            <!-- Nupp, et navigeerida Esmaabi lehele -->
 
             <Button
                 Text="FirstAid" Clicked="NavigateToFirstAid"
@@ -27,6 +34,8 @@
                 TextColor="White"
                 HeightRequest="60" />
 
+            <!-- Nupp, et navigeerida Situatsioonide lehele -->
+
             <Button
                 Text="Situations" Clicked="NavigateToSituations"
                 Margin="0,0,0,0"
@@ -34,12 +43,16 @@
                 TextColor="White"
                 HeightRequest="60"/>
 
+            <!-- Nupp, et navigeerida Kompassi lehele -->
+
             <Button
                 Text="Compass" Clicked="NavigateToCompass"
                 Margin="0,0,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60"/>
+            
+            <!-- Nupp, et navigeerida GPS lehele-->
 
             <Button
                 Text="GPS" Clicked="NavigateToGPS"
@@ -47,6 +60,8 @@
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60"/>
+            
+            <!-- Nupp, et navigeerida sensorite lehele-->
 
             <Button
                 Text="Sensors" Clicked="NavigateToSensors"

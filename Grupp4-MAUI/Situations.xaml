@@ -3,22 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.Situations"
              Title="Situations">
+
+    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
+        
+        <!-- Grid elemendi defineerimine -->
 
         <Grid>
+            
+            <!-- Grid ridade koguse ja k2rguse defineerimine -->
             
             <Grid.RowDefinitions>
                 <RowDefinition Height="300" />
                 <RowDefinition Height="300" />
+
             </Grid.RowDefinitions>
+            
+            <!-- Grid koolonite koguse ja laiiuse defineerimne -->
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+            
+            <!-- Pildi nimes ei tohi olla suuri t2hti  MAUI erip2ra -->
+            <!-- Pilt Boreaalsest metsast -->
+            
 
             <Image
                 Source="forest.jpg" Grid.Row="0" Grid.Column="0"
@@ -26,30 +41,62 @@
                 HeightRequest="200"
                 Margin="5"
                 HorizontalOptions="Center" />
+            
+            <!-- Nupp minna Boreaalse metsa situatsiooni-->
 
             <Button
-                Text="In a Forest" Grid.Row="0" Grid.Column="0"
+                Text="Boreal Forest" Grid.Row="0" Grid.Column="0"
                 Clicked="NavigateToForest"
                 Margin="0,300,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
-            
+
+
+            <!-- Pilt Parasvöötme metsast -->
+
 
             <Image
-                Source="ice_sheet.jpg" Grid.Row="0" Grid.Column="1"
-                SemanticProperties.Description="Kui oled õhukesel jääl"
+                Source="temperate_forest.jpg" Grid.Row="0" Grid.Column="1"
+                SemanticProperties.Description="Kui oled metsas eksinud"
                 HeightRequest="200"
                 Margin="5"
                 HorizontalOptions="Center" />
 
+            <!-- Nupp minna Metsa situatsiooni-->
+
             <Button
-                Text="On thin Ice" Grid.Row="0" Grid.Column="1"
-                Clicked="NavigateToIce"
+                Text="Temperate Forest" Grid.Row="0" Grid.Column="1"
+                Clicked="NavigateToTemperateForest"
+                Margin="5,300,5,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60" />
+
+
+            <!-- Pilt Parasvöötme metsast -->
+
+
+            <Image
+                Source="tropical_forest.jpg" Grid.Row="0" Grid.Column="2"
+                SemanticProperties.Description="Kui oled metsas eksinud"
+                HeightRequest="200"
+                Margin="5"
+                HorizontalOptions="Center" />
+
+            <!-- Nupp minna Metsa situatsiooni-->
+
+            <Button
+                Text="Tropical Forest" Grid.Row="0" Grid.Column="2"
+                Clicked="NavigateToTropicalForest"
                 Margin="5,300,0,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
+
+
+            
+            <!-- Pilt Soost -->
 
 
             <Image
@@ -58,6 +105,8 @@
                 HeightRequest="200"
                 Margin="5"
                 HorizontalOptions="Center" />
+            
+            <!-- Nupp minna Soo situatsiooni-->
 
             <Button
                 Text="In a Swamp" Grid.Row="1" Grid.Column="0"
@@ -66,6 +115,9 @@
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
+            
+            <!-- Pilt M2gedest-->
+            
 
             <Image
                 Source="mountain.jpg" Grid.Row="1" Grid.Column="1"
@@ -73,18 +125,41 @@
                 HeightRequest="200"
                 Margin="5"
                 HorizontalOptions="Center" />
+            
+            <!-- Nupp minna M2gede situatsiooni-->
 
             <Button
                 Text="In a Mountain" Grid.Row="1" Grid.Column="1"
                 Clicked="NavigateToMountain"
-                Margin="5,300,0,0"
+                Margin="5,300,5,0"
                 BackgroundColor="#4166F5"
                 TextColor="White"
                 HeightRequest="60" />
 
 
-            <!-- Muud elemendid siia vastavalt soovile -->
+            <!-- Pilt J22st-->
+
+
+            <Image
+                Source="ice_sheet.jpg" Grid.Row="1" Grid.Column="2"
+                SemanticProperties.Description="Kui oled õhukesel jääl"
+                HeightRequest="200"
+                Margin="5"
+                HorizontalOptions="Center" />
+
+            <!-- Nupp minna J22 situatsiooni-->
+
+            <Button
+                Text="On thin Ice" Grid.Row="1" Grid.Column="2"
+                Clicked="NavigateToIce"
+                Margin="5,300,0,0"
+                BackgroundColor="#4166F5"
+                TextColor="White"
+                HeightRequest="60" />
+
         </Grid>
+        
+        <!-- Nupp minna eelmisele lehele -->
 
         <Button
              Text="To Main Page" Clicked="BackButton"

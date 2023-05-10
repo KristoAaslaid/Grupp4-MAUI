@@ -12,25 +12,35 @@ public partial class MainPage : ContentPage
 		BindingContext = vm;
     }
 
+    // Käsk minna Esmaabi lehele
+
     private async void NavigateToFirstAid(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new FirstAid());
     }
+
+    // Käsk minna Situatsioonide lehele
 
     private async void NavigateToSituations(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Situations());
     }
 
+    // Käsk minna Kompassi lehele
+
     private async void NavigateToCompass(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Compass());
     }
 
+    // Käsk minna Sensorite lehele
+
     private async void NavigateToSensors(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new Sensors());
     }
+
+    // Käsk minna GPS lehele
 
     private async void NavigateToGPS(object sender, EventArgs e)
     {

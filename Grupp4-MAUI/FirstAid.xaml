@@ -4,7 +4,7 @@
              x:Class="Grupp4_MAUI.FirstAid"
              Title="FirstAid">
     
-    <!-- Css, et sisus ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
     
     <VerticalStackLayout
         Spacing="25"

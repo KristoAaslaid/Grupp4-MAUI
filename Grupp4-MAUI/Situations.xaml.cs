@@ -26,6 +26,14 @@ public partial class Situations : ContentPage
         await Navigation.PushAsync(new Mountain());
 
     }
+    private async void NavigateToTemperateForest(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TemperateForest());
+    }
+    private async void NavigateToTropicalForest(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new TropicalForest());
+    }
 
     private async void BackButton(object sender, EventArgs e)
     {

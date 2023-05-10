@@ -90,6 +90,12 @@
     <MauiXaml Update="SituationPages\Swamp.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
+    <MauiXaml Update="SituationPages\TemperateForest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="SituationPages\TropicalForest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="Situations.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
