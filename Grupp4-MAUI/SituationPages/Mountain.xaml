@@ -3,16 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.SituationPages.Mountain"
              Title="Mountain">
+
+    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
     
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
-        
+
+        <!-- Pealkiri lehe keskel ja suuremalt -->
+
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="If lost in The Mountains"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            Padding="0,20,0,0"
+            FontSize="32"/>
+
+        <!--Püsi rahulikuna ja hinda oma olukorda.-->
+
+        <Label
+            Text="Stay calm and assess your situation: Take a moment to gather your thoughts, stay calm, and assess your surroundings. Determine if you can retrace your steps or find recognizable landmarks."/>
+
+        <!--Leia või ehitada varjualune kaitseks.-->
+
+        <Label
+            Text="Find or build shelter: Protecting yourself from the elements is crucial in the mountains. Seek natural shelters like caves or rock formations. If necessary, construct a makeshift shelter using available materials like branches, foliage, or a tarp."/>
+
+        <!--Joo piisavalt vett, leides veekogu ja puhastades vee vajadusel.-->
+
+        <Label
+            Text="Stay hydrated: Look for a water source such as streams or melting snow. If necessary, melt snow and boil the water to make it safe for drinking. Conserve water by rationing it and avoiding unnecessary physical exertion."/>
+
+        <!--Pane soojustus esikohale, kihista riideid ja kasuta lisaisolatsiooni.-->
+
+        <Label
+            Text="Prioritize warmth: Mountain temperatures can be extreme, especially at higher altitudes. Layer your clothing, wear a hat, gloves, and insulated footwear. Use additional insulation like blankets or sleeping bags to retain body heat."/>
+
+        <!--Anna abi märguandeid visuaalsete ja heliliste märkidega.-->
+
+        <Label
+            Text="Signal for help: Use visual and auditory signals to attract attention. Use a whistle, mirror, flashlight, or brightly colored items to signal for rescue. Create visible SOS signs in open areas or use smoke from a fire to signal for help."/>
+
+        <!--Liigu ettevaatlikult, vältides ohtlikke piirkondi.-->
+
+        <Label
+            Text="Navigate carefully: If you need to move, do so cautiously. Use a map, compass, or GPS device to orient yourself and choose a safe route. Avoid hazardous areas like steep slopes, cliffs, or unstable terrain."/>
+
+        <!--Säästa energiat ja jaga toitu mõistlikult.-->
+
+        <Label
+            Text="Conserve energy and food: Mountain environments can be physically demanding. Conserve your energy by resting and avoiding unnecessary exertion. Ration your food supply to ensure it lasts until help arrives or you find your way back."/>
+
+        <!--Ole valmis muutuvateks ilmastikuoludeks.-->
+
+        <Label
+            Text="Be prepared for changing weather: Mountain weather can change rapidly, so be prepared for rain, snow, or sudden temperature drops. Carry waterproof and windproof clothing, as well as a small emergency kit with essential items."/>
+
+        <!--Säilita positiivne meelestatus, keskendu olulisele ja kasuta ressursse tarkusega.-->
+
+        <Label
+            Text="Stay positive and focused: Maintaining a positive mindset is crucial for survival. Stay focused on your immediate needs, adapt to the situation, and use your resources wisely."/>
+
+        <!-- Tagasi Nupp -->
 
         <Button
              Text="Back" Clicked="BackButton"
