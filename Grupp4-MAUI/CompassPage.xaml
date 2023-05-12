@@ -20,10 +20,8 @@
             />
 
         <GraphicsView Drawable="{StaticResource drawable}"
-                      HeightRequest="400"
+                      HeightRequest="500"
                       WidthRequest="320" />
-
-
 
 
         <Button
