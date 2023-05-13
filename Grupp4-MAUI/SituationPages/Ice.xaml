@@ -5,8 +5,8 @@
              Title="Ice">
 
     <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-
-    <VerticalStackLayout
+    <ScrollView>
+        <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
@@ -74,4 +74,5 @@
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

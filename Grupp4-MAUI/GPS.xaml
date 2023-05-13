@@ -5,7 +5,7 @@
              Title="GPS">
 
     <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
@@ -28,4 +28,5 @@
             HeightRequest="60"/>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -7,6 +7,7 @@
     <ContentPage.Resources>
         <drawable:GraphicsDrawable x:Key="drawable" />
     </ContentPage.Resources>
+    <ScrollView>
     <VerticalStackLayout>
         <Label
             x:Name="CompassLabel"
@@ -35,5 +36,5 @@
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
-    
+    </ScrollView>
 </ContentPage>

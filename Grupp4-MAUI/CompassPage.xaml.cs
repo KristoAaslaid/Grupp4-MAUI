@@ -19,7 +19,7 @@ public partial class CompassPage : ContentPage
     {
         // Update UI Label with compass state
         CompassLabel.TextColor = Colors.Green;
-        CompassLabel.Text = $"{e.Reading.HeadingMagneticNorth}°";
+        CompassLabel.Text = $"{String.Format("{0:0.00}",e.Reading.HeadingMagneticNorth)}°";
         // Rotate compass image to match compass state
         CompassImage.Rotation = e.Reading.HeadingMagneticNorth;
     }

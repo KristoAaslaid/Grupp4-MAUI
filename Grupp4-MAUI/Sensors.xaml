@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
              x:DataType="viewmodel:MainViewModel"
              Title="Sensors">
-    
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
@@ -87,4 +87,5 @@
              HeightRequest="100"/>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

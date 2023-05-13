@@ -5,7 +5,7 @@
              Title="Swamp">
 
     <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
@@ -76,4 +76,5 @@
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
