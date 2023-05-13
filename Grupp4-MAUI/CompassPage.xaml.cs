@@ -7,23 +7,11 @@ public partial class CompassPage : ContentPage
 	public CompassPage()
 	{
 		InitializeComponent();
-	}
-    private void ToggleCompass(object sender, EventArgs e)
-    {
         if (Compass.Default.IsSupported)
         {
-            if (!Compass.Default.IsMonitoring)
-            {
                 // Turn on compass
                 Compass.Default.ReadingChanged += Compass_ReadingChanged;
                 Compass.Default.Start(SensorSpeed.UI);
-            }
-            else
-            {
-                // Turn off compass
-                Compass.Default.Stop();
-                Compass.Default.ReadingChanged -= Compass_ReadingChanged;
-            }
         }
     }
 
@@ -31,11 +19,19 @@ public partial class CompassPage : ContentPage
     {
         // Update UI Label with compass state
         CompassLabel.TextColor = Colors.Green;
-        CompassLabel.Text = $"Compass: {e.Reading}";
+        CompassLabel.Text = $"{e.Reading.HeadingMagneticNorth}°";
+        // Rotate compass image to match compass state
+        CompassImage.Rotation = e.Reading.HeadingMagneticNorth;
     }
 
     private async void BackButton(object sender, EventArgs e)
     {
         await Navigation.PopToRootAsync();
+        // Turn off compass
+        if (Compass.Default.IsSupported)
+        {
+            Compass.Default.Stop();
+            Compass.Default.ReadingChanged -= Compass_ReadingChanged;
+        }
     }
 }

@@ -11,18 +11,22 @@
         <Label
             x:Name="CompassLabel"
             Text="Compass still in development"
+            FontSize="24"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         
-        <Button
-            Text="Toggle Compass"
-            Clicked="ToggleCompass"
-            />
 
-        <GraphicsView Drawable="{StaticResource drawable}"
+        <!-- <GraphicsView Drawable="{StaticResource drawable}" 
                       HeightRequest="500"
-                      WidthRequest="320" />
+                      WidthRequest="320" /> 
+        -->
 
+        <Image Source="compass.png"
+               x:Name="CompassImage"
+               HeightRequest="500"
+               WidthRequest="320">
+
+        </Image>
 
         <Button
              Text="To Main Page" Clicked="BackButton"
