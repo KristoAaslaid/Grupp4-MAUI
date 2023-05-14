@@ -30,7 +30,7 @@ public partial class MainPage : ContentPage
 
     private async void NavigateToCompass(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Compass());
+        await Navigation.PushAsync(new CompassPage());
     }
 
     // Käsk minna Sensorite lehele
