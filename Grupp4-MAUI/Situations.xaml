@@ -170,4 +170,5 @@
              HeightRequest="100"/>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
