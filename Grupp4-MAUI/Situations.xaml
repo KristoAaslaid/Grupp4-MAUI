@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -13,15 +14,20 @@
         VerticalOptions="Start">
         
         <!-- Grid elemendi defining-->
-
-        <Grid>
+        
+        <Grid
+            HorizontalOptions="Center"
+            >
             
             <!-- Grid rows and height defining -->
             
             <Grid.RowDefinitions>
-                <RowDefinition Height="300" />
-                <RowDefinition Height="300" />
-
+                <RowDefinition Height="125" />
+                <RowDefinition Height="125" />
+                <RowDefinition Height="125" />
+                <RowDefinition Height="125" />
+                <RowDefinition Height="125" />
+                <RowDefinition Height="125" />
             </Grid.RowDefinitions>
             
             <!-- Grid column and width defining -->
@@ -34,130 +40,130 @@
             
             <!-- Picture names must not begin or contain capital letters -->
             
-            <!-- Picture of Boreal Forest -->
-            
-
-            <Image
-                Source="forest.jpg" Grid.Row="0" Grid.Column="0"
-                SemanticProperties.Description="Kui oled metsas eksinud"
-                HeightRequest="200"
-                Margin="5"
-                HorizontalOptions="Center" />
-            
             <!-- Button for Boreal Forest-->
 
             <Button
                 Text="Boreal Forest" Grid.Row="0" Grid.Column="0"
                 Clicked="NavigateToForest"
-                Margin="0,300,5,0"
+                Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
-                HeightRequest="60" />
+                HeightRequest="100" />
 
+            <!-- Picture of Boreal Forest -->
+            
+
+            <Image
+                Source="forest.jpg" Grid.Row="0" Grid.Column="1"
+                SemanticProperties.Description="Kui oled metsas eksinud"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
+                HorizontalOptions="Center" />
+            
+
+
+            <!-- Button for Temperate Forest-->
+
+            <Button
+                Text="Temperate Forest" Grid.Row="1" Grid.Column="0"
+                Clicked="NavigateToTemperateForest"
+               Margin="0,50,5,0"
+                BackgroundColor="#02AD62"
+                TextColor="White"
+                HeightRequest="100" />
 
             <!-- Picture of Temperate Forest -->
 
 
             <Image
-                Source="temperate_forest.jpg" Grid.Row="0" Grid.Column="1"
+                Source="temperate_forest.jpg" Grid.Row="1" Grid.Column="1"
                 SemanticProperties.Description="Kui oled metsas eksinud"
-                HeightRequest="200"
-                Margin="5"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
                 HorizontalOptions="Center" />
 
-            <!-- Button for Temperate Forest-->
+
+            <!-- Button for Tropical Forest-->
 
             <Button
-                Text="Temperate Forest" Grid.Row="0" Grid.Column="1"
-                Clicked="NavigateToTemperateForest"
-                Margin="5,300,5,0"
+                Text="Tropical Forest" Grid.Row="2" Grid.Column="0"
+                Clicked="NavigateToTropicalForest"
+                Margin="0,50,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
-                HeightRequest="60" />
-
+                HeightRequest="100" />
 
             <!-- Picture of Tropical Forest -->
 
 
             <Image
-                Source="tropical_forest.jpg" Grid.Row="0" Grid.Column="2"
+                Source="tropical_forest.jpg" Grid.Row="2" Grid.Column="1"
                 SemanticProperties.Description="Kui oled metsas eksinud"
-                HeightRequest="200"
-                Margin="5"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
                 HorizontalOptions="Center" />
 
-            <!-- Button for Tropical Forest-->
+            
+            <!-- Button for Swamp -->
 
             <Button
-                Text="Tropical Forest" Grid.Row="0" Grid.Column="2"
-                Clicked="NavigateToTropicalForest"
-                Margin="5,300,0,0"
+                Text="In a Swamp" Grid.Row="3" Grid.Column="0"
+                Clicked="NavigateToSwamp"
+                Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
-                HeightRequest="60" />
-
-
+                HeightRequest="100" />
             
             <!-- Picture of Swamp -->
 
 
             <Image
-                Source="swamp.jpg" Grid.Row="1" Grid.Column="0"
+                Source="swamp.jpg" Grid.Row="3" Grid.Column="1"
                 SemanticProperties.Description="Kui oled õhukesel jääl"
-                HeightRequest="200"
-                Margin="5"
-                HorizontalOptions="Center" />
-            
-            <!-- Button for Swamp -->
-
-            <Button
-                Text="Swamp" Grid.Row="1" Grid.Column="0"
-                Clicked="NavigateToSwamp"
-                Margin="0,300,5,0"
-                BackgroundColor="#02AD62"
-                TextColor="White"
-                HeightRequest="60" />
-            
-            <!-- Picture of Mountains-->
-            
-
-            <Image
-                Source="mountain.jpg" Grid.Row="1" Grid.Column="1"
-                SemanticProperties.Description="Kui oled mäel"
-                HeightRequest="200"
-                Margin="5"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
                 HorizontalOptions="Center" />
             
             <!-- Button for Mountains -->
 
             <Button
-                Text="Mountain" Grid.Row="1" Grid.Column="1"
+                Text="In a Mountain" Grid.Row="4" Grid.Column="0"
                 Clicked="NavigateToMountain"
-                Margin="5,300,5,0"
+                Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
-                HeightRequest="60" />
+                HeightRequest="100" />
 
+            <!-- Picture of Mountains-->
+            
+
+            <Image
+                Source="mountain.jpg" Grid.Row="4" Grid.Column="1"
+                SemanticProperties.Description="Kui oled mäel"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
+                HorizontalOptions="Center" />
+            
+
+            <!-- Button for Ice-->
+
+            <Button
+                Text="On thin Ice" Grid.Row="5" Grid.Column="0"
+                Clicked="NavigateToIce"
+                Margin="0,50,0,0"
+                BackgroundColor="#02AD62"
+                TextColor="White"
+                HeightRequest="100" />
 
             <!-- Picture of Ice-->
 
 
             <Image
-                Source="ice_sheet.jpg" Grid.Row="1" Grid.Column="2"
+                Source="ice_sheet.jpg" Grid.Row="5" Grid.Column="1"
                 SemanticProperties.Description="Kui oled õhukesel jääl"
-                HeightRequest="200"
-                Margin="5"
+                HeightRequest="100"
+                Margin="15, 50, 5, 0"
                 HorizontalOptions="Center" />
-
-            <!-- Button for Ice-->
-
-            <Button
-                Text="Thin Ice" Grid.Row="1" Grid.Column="2"
-                Clicked="NavigateToIce"
-                Margin="5,300,0,0"
-                BackgroundColor="#02AD62"
-                TextColor="White"
-                HeightRequest="60" />
 
         </Grid>
         
@@ -168,8 +174,11 @@
              Margin="0,60,0,0"
              BackgroundColor="#02AD62"
              TextColor="White"
-             HeightRequest="100"/>
+             HeightRequest="100"
+            WidthRequest="275"
+            />
 
     </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>
