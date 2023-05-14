@@ -5,16 +5,18 @@
              Title="TemperateForest">
 
     <!-- Css, so that content wont touch the edges of the screen -->
-    
-    <VerticalStackLayout
-        Spacing="25"
+
+    <ScrollView>
+
+        <VerticalStackLayout
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
         <!-- Header in middle of sceen also bigger -->
         
         <Label 
-            Text="If lost in a Temperate Forest!"
+            Text="If you are lost in a Temperate Forest!"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"
@@ -75,4 +77,5 @@
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

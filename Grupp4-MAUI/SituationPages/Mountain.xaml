@@ -5,73 +5,76 @@
              Title="Mountain">
 
     <!-- Css, so that content wont touch the edges of the screen -->
-    
-    <VerticalStackLayout
-        Spacing="25"
+
+    <ScrollView>
+
+        <VerticalStackLayout
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Header in middle of sceen also bigger -->
+            <!-- Header in middle of sceen also bigger -->
 
-        <Label 
-            Text="If lost in The Mountains"
+            <Label 
+            Text="If you are lost in The Mountains!"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"
             FontSize="32"/>
 
-        <!-- Stay calm and assess your situation. -->
+            <!-- Stay calm and assess your situation. -->
 
-        <Label
+            <Label
             Text="Stay calm and assess your situation: Take a moment to gather your thoughts, stay calm, and assess your surroundings. Determine if you can retrace your steps or find recognizable landmarks."/>
 
-        <!-- Find or build shelter for protection. -->
+            <!-- Find or build shelter for protection. -->
 
-        <Label
+            <Label
             Text="Find or build shelter: Protecting yourself from the elements is crucial in the mountains. Seek natural shelters like caves or rock formations. If necessary, construct a makeshift shelter using available materials like branches, foliage, or a tarp."/>
 
-        <!-- Stay hydrated by finding water sources and purifying the water. -->
+            <!-- Stay hydrated by finding water sources and purifying the water. -->
 
-        <Label
+            <Label
             Text="Stay hydrated: Look for a water source such as streams or melting snow. If necessary, melt snow and boil the water to make it safe for drinking. Conserve water by rationing it and avoiding unnecessary physical exertion."/>
 
-        <!-- Prioritize warmth by layering clothing and using additional insulation. -->
+            <!-- Prioritize warmth by layering clothing and using additional insulation. -->
 
-        <Label
+            <Label
             Text="Prioritize warmth: Mountain temperatures can be extreme, especially at higher altitudes. Layer your clothing, wear a hat, gloves, and insulated footwear. Use additional insulation like blankets or sleeping bags to retain body heat."/>
 
-        <!-- Signal for help using visual and auditory cues. -->
+            <!-- Signal for help using visual and auditory cues. -->
 
-        <Label
+            <Label
             Text="Signal for help: Use visual and auditory signals to attract attention. Use a whistle, mirror, flashlight, or brightly colored items to signal for rescue. Create visible SOS signs in open areas or use smoke from a fire to signal for help."/>
 
-        <!-- Navigate carefully, avoiding hazardous areas. -->
+            <!-- Navigate carefully, avoiding hazardous areas. -->
 
-        <Label
+            <Label
             Text="Navigate carefully: If you need to move, do so cautiously. Use a map, compass, or GPS device to orient yourself and choose a safe route. Avoid hazardous areas like steep slopes, cliffs, or unstable terrain."/>
 
-        <!-- Conserve energy and ration food. -->
+            <!-- Conserve energy and ration food. -->
 
-        <Label
+            <Label
             Text="Conserve energy and food: Mountain environments can be physically demanding. Conserve your energy by resting and avoiding unnecessary exertion. Ration your food supply to ensure it lasts until help arrives or you find your way back."/>
 
-        <!-- Be prepared for changing weather conditions. -->
+            <!-- Be prepared for changing weather conditions. -->
 
-        <Label
+            <Label
             Text="Be prepared for changing weather: Mountain weather can change rapidly, so be prepared for rain, snow, or sudden temperature drops. Carry waterproof and windproof clothing, as well as a small emergency kit with essential items."/>
 
-        <!-- Stay positive, focused, and use resources wisely. -->
+            <!-- Stay positive, focused, and use resources wisely. -->
 
-        <Label
+            <Label
             Text="Stay positive and focused: Maintaining a positive mindset is crucial for survival. Stay focused on your immediate needs, adapt to the situation, and use your resources wisely."/>
 
-        <!-- Back button -->
+            <!-- Back button -->
 
-        <Button
+            <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
              BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

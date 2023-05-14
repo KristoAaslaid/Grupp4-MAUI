@@ -9,14 +9,14 @@
     <ScrollView>
 
         <VerticalStackLayout
-        Spacing="25"
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
     <!-- Header in middle of sceen also bigger -->
         
         <Label 
-            Text="If lost in a Boreal Forest"
+            Text="If you are lost in a Boreal Forest!"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"

@@ -7,7 +7,7 @@
     <!-- Css, so that content wont touch the edges of the screen -->
     
     <VerticalStackLayout
-        Spacing="25"
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
@@ -24,15 +24,12 @@
         <!-- Stop bleeding by applying pressure to the wound and elevating the affected area. -->
 
 
-        <Label
-            Text="Stop bleeding by applying pressure to the wound and elevating the affected area."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Stop bleeding " FontAttributes="Bold" />
                     <Span Text="by " />
-                    <Span Text="apply" FontAttributes="Bold" />
-                    <Span Text="ing " />
+                    <Span Text="applying " FontAttributes="Bold" />
                     <Span Text="pressure to " FontAttributes="Bold" />
                     <Span Text="the " />
                     <Span Text="wound" FontAttributes="Bold" />
@@ -43,34 +40,29 @@
 
         <!-- Treat injuries and wounds by cleaning and dressing them as soon as possible. -->
 
-        <Label
-            Text="Treat injuries and wounds by cleaning and dressing them as soon as possible."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Treat injuries " FontAttributes="Bold" />
                     <Span Text="and " />
                     <Span Text="wounds " FontAttributes="Bold" />
                     <Span Text="by " />
-                    <Span Text="clean" FontAttributes="Bold" />
-                    <Span Text="ing and " />
-                    <Span Text="dress" FontAttributes="Bold" />
-                    <Span Text="ing as soon as possible " />
+                    <Span Text="cleaning " FontAttributes="Bold" />
+                    <Span Text="and " />
+                    <Span Text="dressing " FontAttributes="Bold" />
+                    <Span Text="as soon as possible " />
                 </FormattedString>
             </Label.FormattedText>
         </Label>
 
         <!-- Treat burns by cooling them with cool water and covering them with a clean, dry cloth. -->
 
-        <Label
-            Text="Treat burns by cooling them with cool water and covering them with a clean, dry cloth."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Treat burns by cooling " FontAttributes="Bold" />
                     <Span Text="them with cool water and " />
-                    <Span Text="cover" FontAttributes="Bold" />
-                    <Span Text="ing " />
+                    <Span Text="covering " FontAttributes="Bold" />
                     <Span Text="them " FontAttributes="Bold" />
                     <Span Text="with a clean, dry cloth. " />
                 </FormattedString>
@@ -79,20 +71,18 @@
 
         <!-- Stay hydrated by drinking plenty of water and purifying any water sources you find. -->
 
-        <Label
-            Text="Stay hydrated by drinking plenty of water and purifying any water sources you find."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Stay hydrated " FontAttributes="Bold" />
                     <Span Text="by " />
-                    <Span Text="drink" FontAttributes="Bold" />
-                    <Span Text="ing plenty of " />
-                    <Span Text="water" FontAttributes="Bold" />
+                    <Span Text="drinking " FontAttributes="Bold" />
+                    <Span Text="plenty of " />
+                    <Span Text="water " FontAttributes="Bold" />
                     <Span Text="and " />
-                    <Span Text="purify" FontAttributes="Bold" />
-                    <Span Text="ing any " />
-                    <Span Text="water" FontAttributes="Bold" />
+                    <Span Text="purifying " FontAttributes="Bold" />
+                    <Span Text="any " />
+                    <Span Text="water " FontAttributes="Bold" />
                     <Span Text="sources you find " />
                 </FormattedString>
             </Label.FormattedText>
@@ -100,19 +90,16 @@
 
         <!-- Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets. -->
 
-        <Label
-            Text="Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Treat hypothermia " FontAttributes="Bold" />
                     <Span Text="by " />
-                    <Span Text="remove" FontAttributes="Bold" />
-                    <Span Text="ing " />
+                    <Span Text="removing " FontAttributes="Bold" />
                     <Span Text="wet clothing " FontAttributes="Bold" />
                     <Span Text="and " />
-                    <Span Text="replace" FontAttributes="Bold" />
-                    <Span Text="ing it " />
+                    <Span Text="replacing " FontAttributes="Bold" />
+                    <Span Text="it " />
                     <Span Text="with dry clothes " FontAttributes="Bold" />
                     <Span Text="or " />
                     <Span Text="blankets" FontAttributes="Bold" />
@@ -122,15 +109,12 @@
 
         <!-- Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed. -->
 
-        <Label
-            Text="Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
-            Padding="0,20,0,0">
+        <Label>
             <Label.FormattedText>
                 <FormattedString>
                     <Span Text="Stay safe " FontAttributes="Bold" />
                     <Span Text="by " />
-                    <Span Text="avoid" FontAttributes="Bold" />
-                    <Span Text="ing " />
+                    <Span Text="avoiding " FontAttributes="Bold" />
                     <Span Text="risky behaviors, " FontAttributes="Bold" />
                     <Span Text="staying with your group, and signaling for help if needed" />
                 </FormattedString>

@@ -7,14 +7,14 @@
     <!-- Css, so that content wont touch the edges of the screen -->
 
     <VerticalStackLayout
-        Spacing="25"
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
         <!-- Header in middle of sceen also bigger -->
 
         <Label 
-            Text="If stuck on a Ice Sheet"
+            Text="If you are stuck on an Ice Sheet!"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"
