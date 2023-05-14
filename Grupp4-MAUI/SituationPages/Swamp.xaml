@@ -4,14 +4,14 @@
              x:Class="Grupp4_MAUI.SituationPages.Swamp"
              Title="Swamp">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-    <ScrollView>
+    <!-- Css, so that content wont touch the edges of the screen -->
+
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Pealkiri lehe keskel ja suuremalt -->
+        <!-- Header in middle of sceen also bigger -->
 
         <Label 
             Text="If lost in a Swamp or Bog"
@@ -20,61 +20,60 @@
             Padding="0,20,0,0"
             FontSize="32"/>
 
-        <!--Püsi rahulikuna ja hinda oma olukorda.-->
+        <!-- Stay calm and assess your situation. -->
 
         <Label
             Text="Assess your situation: Stay calm and evaluate your surroundings. Take note of any landmarks or signs of civilization that can help you determine the best course of action."/>
 
-        <!--Säästa energiat ja liigu aeglaselt.-->
+        <!-- Conserve energy and move slowly. -->
 
         <Label
             Text="Avoid panic and conserve energy: Bogs and swamps can be physically demanding and disorienting. Avoid panic, as it can lead to poor decision-making and exhaustion. Conserve your energy by moving slowly and deliberately."/>
 
-        <!--Leia kõrgemaid kohti või stabiilset taimestikku.-->
+        <!-- Find higher ground or stable vegetation. -->
 
         <Label
             Text="Find higher ground: Look for areas of higher ground or stable vegetation to avoid sinking in the soft, muddy terrain. Stepping on dense vegetation or fallen logs can provide more support."/>
 
-        <!--Väldi joomist seisva veega ilma selle eelneva puhastamiseta.-->
+        <!-- Avoid drinking stagnant water without purification. -->
 
         <Label
             Text="Mind water sources: Bogs and swamps may have stagnant water that is unsafe to drink. Avoid drinking directly from water sources unless you have the means to purify it. Collect rainwater or find flowing water if possible."/>
 
-        <!--Ehitada platvorm või improviseeritud parv vajadusel.-->
+        <!-- Build a platform or makeshift raft if necessary. -->
 
         <Label
             Text="Build a platform or makeshift raft: If you're unable to find stable ground, constructing a platform or raft can help you navigate through the bog or swamp. Use available materials like logs, branches, or vegetation to create a stable surface to stand or float on."/>
 
-        <!--Kasuta looduslikke tööriistu stabiilsuse ja uurimise jaoks.-->
+        <!-- Use natural tools for stability and probing. -->
 
         <Label
             Text="Use natural tools: Look for long, sturdy branches or vines that can serve as walking aids or tools. They can help you probe the ground ahead, test stability, or assist with pulling yourself out of mud if necessary."/>
 
-        <!--Otsi kuivemat, kõrgemat maad varjualuseks.-->
+        <!-- Seek dry, higher ground for shelter. -->
 
         <Label
             Text="Seek higher ground for shelter: If staying overnight becomes necessary, try to find a dry spot on higher ground away from the water. Construct a raised bed using branches, foliage, or any available materials to stay above the damp ground."/>
 
-        <!--Anna abi märguandeid visuaalsete ja heliliste märkidega.-->
+        <!-- Signal for help using visual and auditory cues. -->
 
         <Label
             Text="Signal for help: Use visual and auditory signals to attract attention. Brightly colored clothing or objects, whistles, mirrors, or smoke from a fire can be effective signals for rescue."/>
 
-        <!--Kaitse end putukate ja kiskjate eest.-->
+        <!-- Protect against insects and predators. -->
 
         <Label
             Text="Protect against insects and predators: Bogs and swamps can be home to various insects and wildlife. Protect yourself from bites and stings by wearing appropriate clothing and using insect repellent. Be cautious of venomous snakes or other predators that may inhabit the area."/>
         
         
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
-    </ScrollView>
 </ContentPage>

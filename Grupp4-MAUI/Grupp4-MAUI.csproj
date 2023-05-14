@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\arial.ttf" />
 	  <None Remove="Resources\Images\output.png" />
 	</ItemGroup>
 

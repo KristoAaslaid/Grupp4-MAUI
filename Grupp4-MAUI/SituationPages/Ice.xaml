@@ -4,14 +4,14 @@
              x:Class="Grupp4_MAUI.SituationPages.Ice"
              Title="Ice">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-    <ScrollView>
-        <VerticalStackLayout
+    <!-- Css, so that content wont touch the edges of the screen -->
+
+    <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Pealkiri lehe keskel ja suuremalt -->
+        <!-- Header in middle of sceen also bigger -->
 
         <Label 
             Text="If stuck on a Ice Sheet"
@@ -19,60 +19,59 @@
             HorizontalOptions="Center"
             Padding="0,20,0,0"
             FontSize="32"/>
-        
-        <!-- Ehita vastupidav varjualune, et kaitsta end külma ja tuule eest. -->
+
+        <!-- Build a sturdy shelter to protect against cold and wind. -->
 
         <Label
             Text="Establish shelter: Create a sturdy shelter to protect yourself from the cold and wind. Look for natural formations like snow caves or build an igloo using compacted snow blocks. Ensure proper insulation to retain heat."/>
 
-        <!--Kanna mitut kihti riideid sooja hoidmiseks ja kaitseks.-->
+        <!-- Layer clothing for warmth and protection. -->
 
         <Label
             Text="Layer your clothing: Wear multiple layers of clothing to trap heat. Start with a moisture-wicking base layer, add insulating layers, and top it off with a windproof and waterproof outer layer. Protect your extremities with hats, gloves, and warm socks."/>
 
-        <!--Sulata lumi või jää veeks ning puhasta see.-->
+        <!-- Melt snow or ice for water and purify it. -->
 
         <Label
             Text="Obtain a water source: Melt ice or snow for water. You can use body heat or heat from a fire source to melt snow. Purify the water by boiling it or using water purification tablets to eliminate any potential contaminants."/>
 
-        <!--Loo tuli sooja saamiseks, toidu valmistamiseks ja abi märguandmiseks.-->
+        <!-- Create a fire for warmth, cooking, and signaling. -->
 
         <Label
             Text="Build a fire: If you have access to combustible materials, create a fire for warmth, cooking, and signaling. Collect dry wood or use other available fuel sources. Keep the fire contained and be cautious of the surrounding ice."/>
 
-        <!--Isoleeri varjualust, et säilitada kehasoojust.-->
+        <!-- Insulate shelter to preserve body heat. -->
 
         <Label
             Text="Preserve body heat: Minimize heat loss by insulating your shelter with additional snow or using blankets, sleeping bags, or thermal wraps. Share body heat with others if you're in a group."/>
 
-        <!--Liigu ettevaatlikult ja jälgi ohtusid.-->
+        <!-- Navigate carefully and watch for hazards. -->
 
         <Label
             Text="Navigate carefully: In icy and snowy landscapes, it can be easy to get disoriented. Pay attention to landmarks, use a compass or GPS device if available, and be cautious of crevasses or thin ice."/>
 
-        <!--Säästa energiat ja jaga toiduvarusid mõistlikult.-->
+        <!-- Conserve energy and ration food. -->
 
         <Label
             Text="Conserve energy and food: Energy conservation is crucial in survival situations. Limit physical activity to avoid sweating and overheating. Conserve food supplies by rationing and prioritizing high-energy foods."/>
 
-        <!--Anna abi kutsumiseks visuaalseid ja kuuldavaid signaale.-->
+        <!-- Signal for rescue using visual and auditory cues. -->
 
         <Label
             Text="Signal for rescue: If you're in a location where there's a chance of being spotted, create visible signals using bright objects, flags, or distress signals on the snow or ice. Use whistles or other noise-making devices to attract attention."/>
 
-        <!--Kanna kaasas hädavajalikku ellujäämiseks mõeldud varustust.-->
+        <!-- Carry essential survival equipment. -->
 
         <Label
             Text="Be prepared for emergencies: Carry essential survival equipment like a first aid kit, emergency blanket, navigation tools, and signaling devices. These items can greatly enhance your chances of survival in case of emergencies."/>
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
         
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
-    </ScrollView>
 </ContentPage>
