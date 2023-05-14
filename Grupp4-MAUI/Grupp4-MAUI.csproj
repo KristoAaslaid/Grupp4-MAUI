@@ -49,21 +49,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\arial.ttf" />
+	  <None Remove="Resources\Images\output.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
+		<PackageReference Include="SkiaSharp" Version="2.88.3" />
+		<PackageReference Include="Syncfusion.Maui.Gauges" Version="21.2.3" />
 	</ItemGroup>
 
   <ItemGroup>
+    <Compile Update="CompassPage.xaml.cs">
+      <DependentUpon>CompassPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="RegisterPage.xaml.cs">
       <DependentUpon>RegisterPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <MauiXaml Update="Compass.xaml">
+    <MauiXaml Update="CompassPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
     <MauiXaml Update="FirstAid.xaml">

@@ -4,19 +4,19 @@
              x:Class="Grupp4_MAUI.MainPage"
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
              x:DataType="viewmodel:MainViewModel"
-             BackgroundColor="LightGrey"
+             BackgroundColor="#FFFFFF"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
 
     <ScrollView>
 
-        <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+        <!-- Css, so that content wont touch the edges of the screen -->
 
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Start">
             
-            <!-- Kas appi logo või siis mingi rahustav pilt? -->
+            <!-- Ighter app logo or a calming relaxing picture -->
 
             <Image
                 Source="keep_calm.jpg"
@@ -25,48 +25,48 @@
                 Margin="0,50,0,0"
                 HorizontalOptions="Center" />
             
-            <!-- Nupp, et navigeerida Esmaabi lehele -->
+            <!-- Button to navigate to first aid -->
 
             <Button
-                Text="FirstAid" Clicked="NavigateToFirstAid"
+                Text="First Aid" Clicked="NavigateToFirstAid"
                 Margin="0,200,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
-            <!-- Nupp, et navigeerida Situatsioonide lehele -->
+            <!-- Button to navigate to situations -->
 
             <Button
                 Text="Situations" Clicked="NavigateToSituations"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
 
-            <!-- Nupp, et navigeerida Kompassi lehele -->
+            <!-- Button to navigate to compass -->
 
             <Button
                 Text="Compass" Clicked="NavigateToCompass"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
             
-            <!-- Nupp, et navigeerida GPS lehele-->
+            <!-- Button to navigate to GPS -->
 
             <Button
                 Text="GPS" Clicked="NavigateToGPS"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
             
-            <!-- Nupp, et navigeerida sensorite lehele-->
+            <!-- Button to navigate to sensors-->
 
             <Button
                 Text="Sensors" Clicked="NavigateToSensors"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
 

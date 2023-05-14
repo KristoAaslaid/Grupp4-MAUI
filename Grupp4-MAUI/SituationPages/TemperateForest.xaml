@@ -4,14 +4,14 @@
              x:Class="Grupp4_MAUI.SituationPages.TemperateForest"
              Title="TemperateForest">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, so that content wont touch the edges of the screen -->
     
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Pealkiri lehe keskel ja suuremalt -->
+        <!-- Header in middle of sceen also bigger -->
         
         <Label 
             Text="If lost in a Temperate Forest!"
@@ -20,58 +20,58 @@
             Padding="0,20,0,0"
             FontSize="32"/>
 
-        <!--Püsi rahulikuna ja hinda oma olukorda.-->
+        <!-- Stay calm and assess your situation. -->
 
         <Label
             Text="Stay calm and assess your situation: Take a moment to collect yourself and evaluate your surroundings. Look for any familiar landmarks or signs of civilization."/>
 
-        <!--Leia või ehitada varjualune kaitseks.-->
+        <!-- Find or build shelter for protection. -->
 
         <Label
             Text="Find or build shelter: Protect yourself from the elements by seeking natural shelters like caves, fallen trees, or dense foliage. If necessary, construct a shelter using available materials like branches, leaves, or a tarp."/>
 
-        <!--Otsi veekogu ja puhasta vesi.-->
+        <!-- Locate a water source and purify the water. -->
 
         <Label
             Text="Locate a water source: Look for a nearby water source such as streams, rivers, or lakes. Ensure the water is safe to drink by filtering, boiling, or using water purification tablets."/>
 
-        <!--Süüta tuli sooja saamiseks ja abi märguandmiseks.-->
+        <!-- Start a fire for warmth and signaling. -->
 
         <Label
             Text="Start a fire: Fire provides warmth, light, and a means of signaling for help. Gather dry wood and use a fire starter or friction-based methods to ignite a fire. Maintain it responsibly and ensure it is fully extinguished before leaving."/>
 
-        <!--Anna abi kutsumiseks visuaalsete ja heliliste märkidega.-->
+        <!-- Signal for rescue using visual and auditory cues. -->
 
         <Label
             Text="Signal for rescue: Use visual and auditory signals to attract attention. Build a signal fire, create visible markers, or use a whistle to alert potential rescuers of your presence."/>
 
-        <!--Järgi looduslikke maamärke ja kasuta kompassi suuna säilitamiseks.-->
+        <!-- Stay oriented using natural landmarks and a compass. -->
 
         <Label
             Text="Stay oriented: Use natural landmarks, the position of the sun, or a compass to maintain a sense of direction. Pay attention to the surrounding terrain and any signs of civilization."/>
 
-        <!--Otsi söödavaid taimi ja õpi põhilisi korjandamistehnikaid.-->
+        <!-- Find edible plants and learn basic foraging techniques. -->
 
         <Label
             Text="Find food and water: Learn to identify edible plants, nuts, and berries in the forest. Avoid consuming anything you are unsure of, as some plants may be toxic. Consider fishing or setting up traps for small game if you have the necessary skills and resources."/>
 
-        <!--Ole ettevaatlik loomade suhtes ja hoia toitu korralikult.-->
+        <!-- Be cautious of wildlife and store food properly. -->
 
         <Label
             Text="Stay safe from wildlife: Be aware of potential wildlife encounters. Research the forest's native species and their behavior. Store food properly and maintain a safe distance if you come across any wild animals."/>
 
-        <!--Säästa energiat ja säilita positiivne meelestatus.-->
+        <!-- onserve energy and maintain a positive mindset. -->
 
         <Label
             Text="Preserve energy and stay positive: Conserve your energy by resting when needed and avoiding unnecessary physical exertion. Maintain a positive mindset and focus on survival tasks to stay motivated."/>
 
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>

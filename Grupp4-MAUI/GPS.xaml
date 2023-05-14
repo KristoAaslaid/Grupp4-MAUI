@@ -5,7 +5,7 @@
              Title="GPS">
 
     <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
-
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
@@ -23,9 +23,17 @@
 
         <Button
             Text="Show current location" Clicked="GetLocation"
-            BackgroundColor="#4166F5"
+            BackgroundColor="#02AD62"
             TextColor="White"
             HeightRequest="60"/>
+        
+            <Button
+             Text="To Main Page" Clicked="BackButton"
+             Margin="0,0,0,0"
+             BackgroundColor="#02AD62"
+             TextColor="White"
+             HeightRequest="100"/>
 
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

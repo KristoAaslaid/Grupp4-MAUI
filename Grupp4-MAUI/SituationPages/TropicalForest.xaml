@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.SituationPages.TropicalForest"
              Title="TropicalForest">
-    
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+
+    <!-- Css, so that content wont touch the edges of the screen -->
 
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Pealkiri lehe keskel ja suuremalt -->
+        <!-- Header in middle of sceen also bigger -->
 
 
         <Label 
@@ -19,58 +19,58 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <!--Püsi rahulikuna ja hinda oma olukorda.-->
+        <!-- Stay calm and assess your situation. -->
 
         <Label
             Text="Stay calm and assess your situation: Take a moment to collect yourself and evaluate your surroundings. Look for any familiar landmarks or signs of civilization."/>
 
-        <!--Leia või ehitada varjualune kaitseks.-->
+        <!-- Find or build shelter for protection. -->
 
         <Label
             Text="Find or build shelter: Protect yourself from the elements by seeking natural shelters like caves, rock formations, or dense foliage. If necessary, construct a shelter using available materials like branches, leaves, or a tarp."/>
 
-        <!--Otsi veekogu ja puhasta vesi.-->
+        <!-- Locate a water source and purify the water. -->
 
         <Label
             Text="Locate a water source: Look for a nearby water source such as streams, rivers, or waterfalls. Ensure the water is safe to drink by filtering, boiling, or using water purification tablets."/>
 
-        <!--Süüta tuli sooja saamiseks ja abi märguandmiseks.-->
+        <!-- Start a fire for warmth and signaling. -->
 
         <Label
             Text="Start a fire: Fire provides warmth, light, and a means of signaling for help. Gather dry wood, leaves, or other combustible materials to start a fire. Be mindful of the fire's location and safety, considering the forest's humidity and potential fire hazards."/>
 
-        <!--Anna abi kutsumiseks visuaalsete ja heliliste märkidega.-->
+        <!-- Signal for rescue using visual and auditory cues. -->
 
         <Label
             Text="Signal for rescue: Use visual and auditory signals to attract attention. Create visible markers, use a whistle, or build a smoky fire to alert potential rescuers of your presence."/>
 
-        <!--Navigeeri ettevaatlikult, kasutades looduslikke tunnusmärke suunaviitadena.-->
+        <!-- Navigate with caution, using natural features as guides. -->
 
         <Label
             Text="Navigate with caution: Tropical forests can be dense and disorienting. Use natural features, like the position of the sun, to maintain a sense of direction. Look for natural clearings or high ground that can provide better visibility."/>
 
-        <!--Õpi tundma söödavaid taimi ja leia turvalisi veekogusid.-->
+        <!-- Learn about edible plants and find safe sources of water. -->
 
         <Label
             Text="Find food and water: Learn about edible plants, fruits, and nuts that are safe for consumption in the tropical forest. Avoid eating anything you are unsure of or that may be toxic. Look for sources of fresh water, such as vines or tree trunks, if necessary."/>
 
-        <!--Ole ettevaatlik loomade suhtes ja hoia toit korralikult kaitstud.-->
+        <!-- Be cautious of wildlife and store food securely. -->
 
         <Label
             Text="Be aware of wildlife: Tropical forests are teeming with wildlife. Educate yourself about potentially dangerous animals and their behavior. Take precautions to store food securely and avoid confrontations with wildlife."/>
 
-        <!--Säästa energiat ja säilita positiivne meelestatus.-->
+        <!-- Conserve energy and maintain a positive mindset. -->
 
         <Label
             Text="Conserve energy and stay positive: Rest when needed to conserve energy and avoid exhaustion. Stay positive and mentally focused on survival tasks. Keeping a positive mindset can improve your chances of staying motivated and making rational decisions."/>
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
 
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>

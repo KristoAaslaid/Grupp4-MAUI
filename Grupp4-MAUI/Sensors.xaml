@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
              x:DataType="viewmodel:MainViewModel"
              Title="Sensors">
-    
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
@@ -32,7 +32,7 @@
                 Text="Thermometer" Clicked="NavigateToThermometer"
                 Grid.Row="0" Grid.Column="0"
                 Margin="0,0,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -40,7 +40,7 @@
                 Text="Accelerometer" Clicked="NavigateToAccelerometer"
                 Grid.Row="0" Grid.Column="1"
                 Margin="5,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -48,7 +48,7 @@
                 Text="Who knows?" Clicked="NavigateToStepDetector"
                 Grid.Row="1" Grid.Column="0"
                 Margin="0,0,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -56,7 +56,7 @@
                 Text="Barometer" Clicked="NavigateToBarometer"
                 Grid.Row="1" Grid.Column="1"
                 Margin="5,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -64,7 +64,7 @@
                 Text="HumiditySensor" Clicked="NavigateToHumiditySensor"
                 Grid.Row="2" Grid.Column="0"
                 Margin="0,0,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -72,7 +72,7 @@
                 Text="StepDetector" Clicked="NavigateToStepDetector"
                 Grid.Row="2" Grid.Column="1"
                 Margin="5,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100"/>
 
@@ -82,9 +82,10 @@
         <Button
              Text="To Main Page" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

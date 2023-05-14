@@ -4,14 +4,14 @@
              x:Class="Grupp4_MAUI.SituationPages.Mountain"
              Title="Mountain">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, so that content wont touch the edges of the screen -->
     
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Pealkiri lehe keskel ja suuremalt -->
+        <!-- Header in middle of sceen also bigger -->
 
         <Label 
             Text="If lost in The Mountains"
@@ -20,57 +20,57 @@
             Padding="0,20,0,0"
             FontSize="32"/>
 
-        <!--Püsi rahulikuna ja hinda oma olukorda.-->
+        <!-- Stay calm and assess your situation. -->
 
         <Label
             Text="Stay calm and assess your situation: Take a moment to gather your thoughts, stay calm, and assess your surroundings. Determine if you can retrace your steps or find recognizable landmarks."/>
 
-        <!--Leia või ehitada varjualune kaitseks.-->
+        <!-- Find or build shelter for protection. -->
 
         <Label
             Text="Find or build shelter: Protecting yourself from the elements is crucial in the mountains. Seek natural shelters like caves or rock formations. If necessary, construct a makeshift shelter using available materials like branches, foliage, or a tarp."/>
 
-        <!--Joo piisavalt vett, leides veekogu ja puhastades vee vajadusel.-->
+        <!-- Stay hydrated by finding water sources and purifying the water. -->
 
         <Label
             Text="Stay hydrated: Look for a water source such as streams or melting snow. If necessary, melt snow and boil the water to make it safe for drinking. Conserve water by rationing it and avoiding unnecessary physical exertion."/>
 
-        <!--Pane soojustus esikohale, kihista riideid ja kasuta lisaisolatsiooni.-->
+        <!-- Prioritize warmth by layering clothing and using additional insulation. -->
 
         <Label
             Text="Prioritize warmth: Mountain temperatures can be extreme, especially at higher altitudes. Layer your clothing, wear a hat, gloves, and insulated footwear. Use additional insulation like blankets or sleeping bags to retain body heat."/>
 
-        <!--Anna abi märguandeid visuaalsete ja heliliste märkidega.-->
+        <!-- Signal for help using visual and auditory cues. -->
 
         <Label
             Text="Signal for help: Use visual and auditory signals to attract attention. Use a whistle, mirror, flashlight, or brightly colored items to signal for rescue. Create visible SOS signs in open areas or use smoke from a fire to signal for help."/>
 
-        <!--Liigu ettevaatlikult, vältides ohtlikke piirkondi.-->
+        <!-- Navigate carefully, avoiding hazardous areas. -->
 
         <Label
             Text="Navigate carefully: If you need to move, do so cautiously. Use a map, compass, or GPS device to orient yourself and choose a safe route. Avoid hazardous areas like steep slopes, cliffs, or unstable terrain."/>
 
-        <!--Säästa energiat ja jaga toitu mõistlikult.-->
+        <!-- Conserve energy and ration food. -->
 
         <Label
             Text="Conserve energy and food: Mountain environments can be physically demanding. Conserve your energy by resting and avoiding unnecessary exertion. Ration your food supply to ensure it lasts until help arrives or you find your way back."/>
 
-        <!--Ole valmis muutuvateks ilmastikuoludeks.-->
+        <!-- Be prepared for changing weather conditions. -->
 
         <Label
             Text="Be prepared for changing weather: Mountain weather can change rapidly, so be prepared for rain, snow, or sudden temperature drops. Carry waterproof and windproof clothing, as well as a small emergency kit with essential items."/>
 
-        <!--Säilita positiivne meelestatus, keskendu olulisele ja kasuta ressursse tarkusega.-->
+        <!-- Stay positive, focused, and use resources wisely. -->
 
         <Label
             Text="Stay positive and focused: Maintaining a positive mindset is crucial for survival. Stay focused on your immediate needs, adapt to the situation, and use your resources wisely."/>
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>

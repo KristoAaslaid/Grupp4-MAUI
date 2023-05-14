@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -45,7 +46,7 @@
                 Text="Boreal Forest" Grid.Row="0" Grid.Column="0"
                 Clicked="NavigateToForest"
                 Margin="0,50,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
 
@@ -67,7 +68,7 @@
                 Text="Temperate Forest" Grid.Row="1" Grid.Column="0"
                 Clicked="NavigateToTemperateForest"
                Margin="0,50,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
 
@@ -88,7 +89,7 @@
                 Text="Tropical Forest" Grid.Row="2" Grid.Column="0"
                 Clicked="NavigateToTropicalForest"
                 Margin="0,50,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
 
@@ -109,7 +110,7 @@
                 Text="In a Swamp" Grid.Row="3" Grid.Column="0"
                 Clicked="NavigateToSwamp"
                 Margin="0,50,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
             
@@ -129,7 +130,7 @@
                 Text="In a Mountain" Grid.Row="4" Grid.Column="0"
                 Clicked="NavigateToMountain"
                 Margin="0,50,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
 
@@ -150,7 +151,7 @@
                 Text="On thin Ice" Grid.Row="5" Grid.Column="0"
                 Clicked="NavigateToIce"
                 Margin="0,50,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
 
@@ -171,7 +172,7 @@
         <Button
              Text="To Main Page" Clicked="BackButton"
              Margin="0,60,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"
             WidthRequest="275"
@@ -179,4 +180,5 @@
 
     </VerticalStackLayout>
     </ScrollView>
+
 </ContentPage>

@@ -3,15 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Grupp4_MAUI.FirstAid"
              Title="FirstAid">
-    
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+
+    <!-- Css, so that content wont touch the edges of the screen -->
     
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
-        
-        <!-- Lehe pealkiri suuremas tekstis lehe keskel -->
+
+        <!-- Header in middle of sceen also bigger -->
         
         <Label 
             Text="First aid Basics"
@@ -19,9 +19,9 @@
             HorizontalOptions="Center"
             Padding="0,20,0,0"
             FontSize="32"/>
-        
-        
-        <!-- Verejooksu peatamise 101 T2htsamad osad boldiga -->
+
+
+        <!-- Stop bleeding by applying pressure to the wound and elevating the affected area. -->
 
 
         <Label
@@ -40,8 +40,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        
-        <!-- Peata verejoos kiiremas korras -->
+
+        <!-- Treat injuries and wounds by cleaning and dressing them as soon as possible. -->
 
         <Label
             Text="Treat injuries and wounds by cleaning and dressing them as soon as possible."
@@ -59,10 +59,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        
-        <!-- Hoolitse p6letus haavade eest -->
-        <!-- Lisa info miskip2rast ei taha Formatted string t22tada vahel isegi kui on eelmisega t2pselt sama saab erroriks value can not be null-->
-        <!-- J2relduseks saan 6elda, et .NET MAUI on loll kuna ta ise ka ei tea mida tahab -->
+
+        <!-- Treat burns by cooling them with cool water and covering them with a clean, dry cloth. -->
 
         <Label
             Text="Treat burns by cooling them with cool water and covering them with a clean, dry cloth."
@@ -79,7 +77,7 @@
             </Label.FormattedText>
         </Label>
 
-        <!-- Joo vett e püsi hüdrateeritud-->
+        <!-- Stay hydrated by drinking plenty of water and purifying any water sources you find. -->
 
         <Label
             Text="Stay hydrated by drinking plenty of water and purifying any water sources you find."
@@ -100,7 +98,7 @@
             </Label.FormattedText>
         </Label>
 
-        <!-- Ara kanna m2rgi riideid -->
+        <!-- Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets. -->
 
         <Label
             Text="Treat hypothermia by removing wet clothing and replacing it with dry clothing or blankets."
@@ -121,8 +119,8 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
-        
-        <!-- Ara sea ennast ise ohtu -->
+
+        <!-- Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed. -->
 
         <Label
             Text="Stay safe by avoiding risky behaviors, staying with your group, and signaling for help if needed."
@@ -139,12 +137,12 @@
             </Label.FormattedText>
         </Label>
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
         <Button
              Text="To Main Page" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
 

@@ -4,14 +4,16 @@
              x:Class="Grupp4_MAUI.SituationPages.Forest"
              Title="Forest">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, so that content wont touch the edges of the screen -->
 
-    <VerticalStackLayout
+    <ScrollView>
+
+        <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
 
-    <!-- Pealkiri lehe keskel ja suuremalt -->
+    <!-- Header in middle of sceen also bigger -->
         
         <Label 
             Text="If lost in a Boreal Forest"
@@ -20,58 +22,59 @@
             Padding="0,20,0,0"
             FontSize="32"/>
 
-        <!--Ära paanitse vaata ringi-->
+        <!-- Stay calm and assess your surroundings. -->
 
         <Label
             Text="Stop and assess the situation: Take a moment to calm yourself and evaluate your surroundings. Look for any recognizable landmarks or signs of civilization. This will help you determine the best course of action."/>
 
-        <!--Ehita peaalune leiduvatest materjalidest-->
+        <!-- Build a shelter using natural materials. -->
 
         <Label
             Text="Build a shelter: Protection from the elements is crucial. Look for natural resources such as fallen trees, branches, or foliage to construct a shelter. A simple lean-to or debris shelter can provide insulation and keep you dry."/>
 
-        <!--Leia vee allikas ja puhasta see-->
+        <!-- Find a water source and purify the water before drinking. -->
 
         <Label
             Text="Find a water source: Locate a nearby water source such as a stream, river, or lake. Water is essential for survival, so make sure to boil it or use purification tablets if possible to avoid consuming any harmful bacteria."/>
 
-        <!--Tee tuli, et ennast soojana hoida ja endast märku anda-->
+        <!-- Start a fire for warmth and signaling. -->
 
         <Label
             Text="Start a fire: Fire serves multiple purposes, including warmth, cooking, and signaling for help. Gather dry leaves, twigs, and branches to create a fire. Make sure to build it in a safe location and keep it under control."/>
 
-        <!--Anna endast märku vilistades või muudel viisidel-->
+        <!-- Signal for help using a whistle or visible signals. -->
 
         <Label
             Text="Signal for help: If you have any signaling devices such as a whistle or a mirror, use them to attract attention. Create a visible signal using rocks, logs, or other materials that contrast with the surroundings. Three consecutive signals (such as three whistle blasts) is a recognized distress signal."/>
 
-        <!--Õpi millised taimed marjad on sõõdavad-->
+        <!-- Learn about edible plants and forage for food cautiously. -->
 
         <Label
             Text="Prioritize food and foraging: Familiarize yourself with edible plants and berries in the area, but be cautious as some plants can be poisonous. Look for signs of animal activity or sources of food like insects, small game, or fish if you have access to water and fishing gear."/>
 
-        <!--Püsi orjenteeritud maa märkide abil-->
+        <!-- Stay oriented using natural navigation methods. -->
 
         <Label
             Text="Stay oriented: Pay attention to your surroundings and try to maintain a sense of direction. Use natural navigation methods such as observing the sun's position, tracking wind patterns, or identifying prominent landmarks to avoid getting disoriented further."/>
 
-        <!--Püsi soojana säästa energiat-->
+        <!-- Stay warm and conserve energy. -->
 
         <Label
             Text="Stay warm and conserve energy: Boreal forests can have cold temperatures, especially at night. Keep yourself warm by layering clothing and using insulation from your shelter. Avoid overexertion to conserve energy and prevent sweating, which can lead to hypothermia."/>
 
-        <!--Ürita olla optimistlik ja mõtle põhilistele ellujäämise vajadustele-->
+        <!-- Maintain a positive mindset and focus on immediate needs. -->
         
         <Label
             Text="Stay positive and focused: Survival situations can be mentally challenging. Maintain a positive mindset, stay focused on your immediate needs, and conserve your resources until help arrives or you find a way to safety."/>
 
-        <!-- Tagasi Nupp -->
+        <!-- Back button -->
 
         <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
