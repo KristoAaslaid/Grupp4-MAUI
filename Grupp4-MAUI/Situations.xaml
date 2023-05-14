@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -107,7 +106,7 @@
             <!-- Button for Swamp -->
 
             <Button
-                Text="In a Swamp" Grid.Row="3" Grid.Column="0"
+                Text="Swamp" Grid.Row="3" Grid.Column="0"
                 Clicked="NavigateToSwamp"
                 Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
@@ -127,7 +126,7 @@
             <!-- Button for Mountains -->
 
             <Button
-                Text="In a Mountain" Grid.Row="4" Grid.Column="0"
+                Text="Mountain" Grid.Row="4" Grid.Column="0"
                 Clicked="NavigateToMountain"
                 Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
@@ -148,7 +147,7 @@
             <!-- Button for Ice-->
 
             <Button
-                Text="On thin Ice" Grid.Row="5" Grid.Column="0"
+                Text="Thin Ice" Grid.Row="5" Grid.Column="0"
                 Clicked="NavigateToIce"
                 Margin="0,50,0,0"
                 BackgroundColor="#02AD62"
