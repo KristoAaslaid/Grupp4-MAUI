@@ -4,18 +4,18 @@
              x:Class="Grupp4_MAUI.Situations"
              Title="Situations">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, so that content wont touch the edges of the screen -->
     
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
         
-        <!-- Grid elemendi defineerimine -->
+        <!-- Grid elemendi defining-->
 
         <Grid>
             
-            <!-- Grid ridade koguse ja k2rguse defineerimine -->
+            <!-- Grid rows and height defining -->
             
             <Grid.RowDefinitions>
                 <RowDefinition Height="300" />
@@ -23,7 +23,7 @@
 
             </Grid.RowDefinitions>
             
-            <!-- Grid koolonite koguse ja laiiuse defineerimne -->
+            <!-- Grid column and width defining -->
             
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -31,8 +31,9 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
-            <!-- Pildi nimes ei tohi olla suuri t2hti  MAUI erip2ra -->
-            <!-- Pilt Boreaalsest metsast -->
+            <!-- Picture names must not begin or contain capital letters -->
+            
+            <!-- Picture of Boreal Forest -->
             
 
             <Image
@@ -42,7 +43,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
             
-            <!-- Nupp minna Boreaalse metsa situatsiooni-->
+            <!-- Button for Boreal Forest-->
 
             <Button
                 Text="Boreal Forest" Grid.Row="0" Grid.Column="0"
@@ -53,7 +54,7 @@
                 HeightRequest="60" />
 
 
-            <!-- Pilt Parasvöötme metsast -->
+            <!-- Picture of Temperate Forest -->
 
 
             <Image
@@ -63,7 +64,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
 
-            <!-- Nupp minna Metsa situatsiooni-->
+            <!-- Button for Temperate Forest-->
 
             <Button
                 Text="Temperate Forest" Grid.Row="0" Grid.Column="1"
@@ -74,7 +75,7 @@
                 HeightRequest="60" />
 
 
-            <!-- Pilt Parasvöötme metsast -->
+            <!-- Picture of Tropical Forest -->
 
 
             <Image
@@ -84,7 +85,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
 
-            <!-- Nupp minna Metsa situatsiooni-->
+            <!-- Button for Tropical Forest-->
 
             <Button
                 Text="Tropical Forest" Grid.Row="0" Grid.Column="2"
@@ -96,7 +97,7 @@
 
 
             
-            <!-- Pilt Soost -->
+            <!-- Picture of Swamp -->
 
 
             <Image
@@ -106,7 +107,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
             
-            <!-- Nupp minna Soo situatsiooni-->
+            <!-- Button for Swamp -->
 
             <Button
                 Text="In a Swamp" Grid.Row="1" Grid.Column="0"
@@ -116,7 +117,7 @@
                 TextColor="White"
                 HeightRequest="60" />
             
-            <!-- Pilt M2gedest-->
+            <!-- Picture of Mountains-->
             
 
             <Image
@@ -126,7 +127,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
             
-            <!-- Nupp minna M2gede situatsiooni-->
+            <!-- Button for Mountains -->
 
             <Button
                 Text="In a Mountain" Grid.Row="1" Grid.Column="1"
@@ -137,7 +138,7 @@
                 HeightRequest="60" />
 
 
-            <!-- Pilt J22st-->
+            <!-- Picture of Ice-->
 
 
             <Image
@@ -147,7 +148,7 @@
                 Margin="5"
                 HorizontalOptions="Center" />
 
-            <!-- Nupp minna J22 situatsiooni-->
+            <!-- Button for Ice-->
 
             <Button
                 Text="On thin Ice" Grid.Row="1" Grid.Column="2"
@@ -159,7 +160,7 @@
 
         </Grid>
         
-        <!-- Nupp minna eelmisele lehele -->
+        <!-- Back button -->
 
         <Button
              Text="To Main Page" Clicked="BackButton"
