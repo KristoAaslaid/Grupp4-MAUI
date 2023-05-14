@@ -4,7 +4,7 @@
              x:Class="Grupp4_MAUI.MainPage"
              xmlns:viewmodel="clr-namespace:Grupp4_MAUI.ViewModel"
              x:DataType="viewmodel:MainViewModel"
-             BackgroundColor="LightGrey"
+             BackgroundColor="#FFFFFF"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
 
     <ScrollView>
@@ -28,9 +28,9 @@
             <!-- Button to navigate to first aid -->
 
             <Button
-                Text="FirstAid" Clicked="NavigateToFirstAid"
+                Text="First Aid" Clicked="NavigateToFirstAid"
                 Margin="0,200,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -39,7 +39,7 @@
             <Button
                 Text="Situations" Clicked="NavigateToSituations"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
 
@@ -48,7 +48,7 @@
             <Button
                 Text="Compass" Clicked="NavigateToCompass"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
             
@@ -57,7 +57,7 @@
             <Button
                 Text="GPS" Clicked="NavigateToGPS"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
             
@@ -66,7 +66,7 @@
             <Button
                 Text="Sensors" Clicked="NavigateToSensors"
                 Margin="0,0,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
 

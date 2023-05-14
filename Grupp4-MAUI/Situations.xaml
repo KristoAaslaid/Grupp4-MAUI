@@ -50,7 +50,7 @@
                 Text="Boreal Forest" Grid.Row="0" Grid.Column="0"
                 Clicked="NavigateToForest"
                 Margin="0,300,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -71,7 +71,7 @@
                 Text="Temperate Forest" Grid.Row="0" Grid.Column="1"
                 Clicked="NavigateToTemperateForest"
                 Margin="5,300,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -92,7 +92,7 @@
                 Text="Tropical Forest" Grid.Row="0" Grid.Column="2"
                 Clicked="NavigateToTropicalForest"
                 Margin="5,300,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -111,10 +111,10 @@
             <!-- Button for Swamp -->
 
             <Button
-                Text="In a Swamp" Grid.Row="1" Grid.Column="0"
+                Text="Swamp" Grid.Row="1" Grid.Column="0"
                 Clicked="NavigateToSwamp"
                 Margin="0,300,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
             
@@ -131,10 +131,10 @@
             <!-- Button for Mountains -->
 
             <Button
-                Text="In a Mountain" Grid.Row="1" Grid.Column="1"
+                Text="Mountain" Grid.Row="1" Grid.Column="1"
                 Clicked="NavigateToMountain"
                 Margin="5,300,5,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -152,10 +152,10 @@
             <!-- Button for Ice-->
 
             <Button
-                Text="On thin Ice" Grid.Row="1" Grid.Column="2"
+                Text="Thin Ice" Grid.Row="1" Grid.Column="2"
                 Clicked="NavigateToIce"
                 Margin="5,300,0,0"
-                BackgroundColor="#4166F5"
+                BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
 
@@ -166,7 +166,7 @@
         <Button
              Text="To Main Page" Clicked="BackButton"
              Margin="0,60,0,0"
-             BackgroundColor="#4166F5"
+             BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
 

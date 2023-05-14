@@ -44,4 +44,9 @@ public partial class GPS : ContentPage
             _isCheckingLocation = false;
         }
     }
+    private async void BackButton(object sender, EventArgs e)
+    {
+        await Navigation.PopToRootAsync();
+
+    }
 }
