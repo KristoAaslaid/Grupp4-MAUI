@@ -51,6 +51,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\arial.ttf" />
 	  <None Remove="Resources\Images\output.png" />
+	  <None Remove="Resources\Images\Survive.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

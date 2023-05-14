@@ -14,7 +14,7 @@
         <!-- Header in middle of sceen also bigger -->
         
         <Label 
-            Text="First aid Basics"
+            Text="First Aid Basics"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             Padding="0,20,0,0"
