@@ -6,6 +6,7 @@
 
     <!-- Css, so that content wont touch the edges of the screen -->
     
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
