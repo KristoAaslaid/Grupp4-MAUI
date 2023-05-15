@@ -1,4 +1,3 @@
-using Grupp4_MAUI.SensorPages;
 using Grupp4_MAUI.SituationPages;
 
 namespace Grupp4_MAUI;

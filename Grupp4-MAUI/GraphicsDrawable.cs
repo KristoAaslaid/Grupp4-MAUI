@@ -9,6 +9,7 @@ namespace Grupp4_MAUI
 {
 	public class GraphicsDrawable : IDrawable
 	{
+        // Class for drawing graphics, not used, but keeping it as a reminder
         private const float ArrowLength = 40f;
         private const float ArrowWidth = 80f;
         public void Draw(ICanvas canvas, RectF dirtyRect)

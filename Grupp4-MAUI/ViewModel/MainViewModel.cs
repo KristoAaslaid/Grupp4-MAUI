@@ -17,7 +17,7 @@ namespace Grupp4_MAUI.ViewModel
         {
 
         }
-
+        // Old unnecessary methods for this project
         [RelayCommand]
         async Task GoBack()
         {

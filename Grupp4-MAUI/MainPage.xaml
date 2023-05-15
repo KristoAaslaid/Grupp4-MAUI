@@ -57,13 +57,7 @@
                 TextColor="White"
                 HeightRequest="60"/>
             
-            <!-- Button to navigate to sensors-->
-
-            <Button
-                Text="Sensors" Clicked="NavigateToSensors"
-                BackgroundColor="#02AD62"
-                TextColor="White"
-                HeightRequest="60"/>
+            <!-- Button to navigate to Weather-->
 
             <Button
                 Text="Current Weather" Clicked="NavigateToWeather"

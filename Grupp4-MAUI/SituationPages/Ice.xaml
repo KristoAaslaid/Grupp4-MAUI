@@ -5,8 +5,8 @@
              Title="Ice">
 
     <!-- Css, so that content wont touch the edges of the screen -->
-
-    <VerticalStackLayout
+    <ScrollView>
+        <VerticalStackLayout
         Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
@@ -74,4 +74,5 @@
              TextColor="White"
              HeightRequest="100"/>
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

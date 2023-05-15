@@ -10,13 +10,14 @@ public partial class WeatherPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
+	// Get the current weather when the page appears
 	protected async override void OnAppearing()
 	{
         base.OnAppearing();
 		await GetLocation();
 		// Get the current weather
 		var result = await ApiService.GetWeather(latitude, longitude);
+		// Set labels to the current weather
 		LocationName.Text = result.name;
 		WeatherDescription.Text = result.weather[0].description;
 		TemperatureLabel.Text = result.main.temperature + "°C";
@@ -24,7 +25,7 @@ public partial class WeatherPage : ContentPage
         WindLabel.Text = result.wind.speed + "km/h";
         WeatherImage.Source = result.weather[0].fullIconUrl;
     }
-
+	// Get the current location of the device
 	public async Task GetLocation()
 	{
 		var location = await Geolocation.GetLocationAsync();

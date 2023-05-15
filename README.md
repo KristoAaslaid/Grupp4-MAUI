@@ -1,22 +1,22 @@
 # Survival app, Grupp4-MAUI
-Survival app on MAUIs loodud app, mille eesmärgiks on aidata inimesel ellu jääda raskes olukorras. App loodi TLÜ mobiilirakenduste arendamise aine jaoks.
+This is a survival app made in MAUI, which is supposed to help people in desperate situations. The app was made for TLÜ "Mobiilirakenduste arendamine" course.
 
-## Kasutatud API/SDK/Extensionid:
+## Project APIs/SDKs/Extensions:
 * Maui Community Toolkit
 * Mvvm Community Toolkit
 * Microsoft Logging
 * Newtonsoft Json
-* Maui Audio Plugin
 * Android 11 SDK
+* OpenWeathermap API
 
-## Rakenduse installerimine ja jooksutamine(Arvuti ja emulaator):
-   * Laadida alla Visual Studio Community Edition (https://visualstudio.microsoft.com/vs/community/)
-   * Valida installerimisel .NET Maui instalatsiooni
-   * Kui Visual Studio installitud, avada seda
-   * Kloonida GitHub Repositootium(Main)
-   * Kui repo kloonitud jooksutada seda kas Windows Masinal või valida Android emulator, mille peale tuleb välja popup selle installerimiseks.
+## Installing and running the app (PC emulation):
+   * Install Visual Studio Community Edition (https://visualstudio.microsoft.com/vs/community/)
+   * During installation make sure to choose and download .NET Maui
+   * When Visual Studio is installed, open it
+   * Clone this Github repository
+   * When the repo has been cloned, use the android emulator or windows machine to run the program
 
-### Telefonis jooksutamise guide: https://learn.microsoft.com/en-us/dotnet/maui/android/device/setup
+### Android phone guide: https://learn.microsoft.com/en-us/dotnet/maui/android/device/setup
 
 ### Figma mockups: https://www.figma.com/file/VYFzAlVUjyZsBEUwwjVtD3/Mobiiliarendus?type=design
 

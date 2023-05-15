@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Grupp4_MAUI.ViewModel
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+    // Json data converted to C# classes
     public class Clouds
     {
         public int all { get; set; }
