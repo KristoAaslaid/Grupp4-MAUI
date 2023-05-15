@@ -26,3 +26,10 @@ This is a survival app made in MAUI, which is supposed to help people in despera
 - Reimo Rämman
 - Andrus Peegel
 - Martin Lukas
+## Pictures:
+![image](https://github.com/KristoAaslaid/Grupp4-MAUI/assets/90237322/62dc88d5-6f32-40be-a258-e1616e58fd9b)
+![image](https://github.com/KristoAaslaid/Grupp4-MAUI/assets/90237322/f33f29ac-429c-4dc1-9011-486499b1bfef)
+![image](https://github.com/KristoAaslaid/Grupp4-MAUI/assets/90237322/8e6ed0ce-2b3b-4318-8aca-c559332e6f8a)
+![image](https://github.com/KristoAaslaid/Grupp4-MAUI/assets/90237322/9715ed3e-38da-4245-ab54-55ea2b4e7269)
+![image](https://github.com/KristoAaslaid/Grupp4-MAUI/assets/90237322/baf7741d-d4d7-4fd2-b83b-252141bb81c0)
+
