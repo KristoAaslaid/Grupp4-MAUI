@@ -47,5 +47,10 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new GPS());
     }
 
+    private async void NavigateToWeather(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new WeatherPage());
+    }
+
 }
 
