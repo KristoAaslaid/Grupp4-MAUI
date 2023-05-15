@@ -4,14 +4,14 @@
              x:Class="Grupp4_MAUI.GPS"
              Title="GPS">
 
-    <!-- Css, et sisu ei puudutaks telefoni 22ri ja oleks ilusam -->
+    <!-- Css, so that content wont touch the edges of the screen -->
     <ScrollView>
     <VerticalStackLayout
         Spacing="25"
         Padding="30,0"
         VerticalOptions="Start">
-        
-        <!-- Lehe pealkiri -->
+
+            <!-- Header in middle of sceen also bigger -->
         
         <Label 
             Text="Your exact location"
@@ -19,13 +19,15 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         
-        <!-- Nupp mis näitab kasutaja täpset asukohta Latitudis ja Longitudis-->
+        <!-- Button that shows current location in both longitude and latitude-->
 
         <Button
             Text="Show current location" Clicked="GetLocation"
             BackgroundColor="#02AD62"
             TextColor="White"
             HeightRequest="60"/>
+        
+        <!-- Back Button -->
         
             <Button
              Text="To Main Page" Clicked="BackButton"
