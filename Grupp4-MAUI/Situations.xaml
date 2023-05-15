@@ -87,7 +87,7 @@
             <Button
                 Text="Tropical Forest" Grid.Row="2" Grid.Column="0"
                 Clicked="NavigateToTropicalForest"
-                Margin="0,50,0,0"
+                Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />
@@ -149,7 +149,7 @@
             <Button
                 Text="Thin Ice" Grid.Row="5" Grid.Column="0"
                 Clicked="NavigateToIce"
-                Margin="0,50,0,0"
+                Margin="0,50,5,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="100" />

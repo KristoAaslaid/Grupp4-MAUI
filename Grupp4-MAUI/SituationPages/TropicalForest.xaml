@@ -6,72 +6,75 @@
 
     <!-- Css, so that content wont touch the edges of the screen -->
 
-    <VerticalStackLayout
-        Spacing="25"
+    <ScrollView>
+
+        <VerticalStackLayout
+        Spacing="20"
         Padding="30,0"
         VerticalOptions="Start">
 
-        <!-- Header in middle of sceen also bigger -->
+            <!-- Header in middle of sceen also bigger -->
 
 
-        <Label 
-            Text="If lost in a Tropical Forest!"
+            <Label 
+            Text="If you are lost in a Tropical Forest!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <!-- Stay calm and assess your situation. -->
+            <!-- Stay calm and assess your situation. -->
 
-        <Label
+            <Label
             Text="Stay calm and assess your situation: Take a moment to collect yourself and evaluate your surroundings. Look for any familiar landmarks or signs of civilization."/>
 
-        <!-- Find or build shelter for protection. -->
+            <!-- Find or build shelter for protection. -->
 
-        <Label
+            <Label
             Text="Find or build shelter: Protect yourself from the elements by seeking natural shelters like caves, rock formations, or dense foliage. If necessary, construct a shelter using available materials like branches, leaves, or a tarp."/>
 
-        <!-- Locate a water source and purify the water. -->
+            <!-- Locate a water source and purify the water. -->
 
-        <Label
+            <Label
             Text="Locate a water source: Look for a nearby water source such as streams, rivers, or waterfalls. Ensure the water is safe to drink by filtering, boiling, or using water purification tablets."/>
 
-        <!-- Start a fire for warmth and signaling. -->
+            <!-- Start a fire for warmth and signaling. -->
 
-        <Label
+            <Label
             Text="Start a fire: Fire provides warmth, light, and a means of signaling for help. Gather dry wood, leaves, or other combustible materials to start a fire. Be mindful of the fire's location and safety, considering the forest's humidity and potential fire hazards."/>
 
-        <!-- Signal for rescue using visual and auditory cues. -->
+            <!-- Signal for rescue using visual and auditory cues. -->
 
-        <Label
+            <Label
             Text="Signal for rescue: Use visual and auditory signals to attract attention. Create visible markers, use a whistle, or build a smoky fire to alert potential rescuers of your presence."/>
 
-        <!-- Navigate with caution, using natural features as guides. -->
+            <!-- Navigate with caution, using natural features as guides. -->
 
-        <Label
+            <Label
             Text="Navigate with caution: Tropical forests can be dense and disorienting. Use natural features, like the position of the sun, to maintain a sense of direction. Look for natural clearings or high ground that can provide better visibility."/>
 
-        <!-- Learn about edible plants and find safe sources of water. -->
+            <!-- Learn about edible plants and find safe sources of water. -->
 
-        <Label
+            <Label
             Text="Find food and water: Learn about edible plants, fruits, and nuts that are safe for consumption in the tropical forest. Avoid eating anything you are unsure of or that may be toxic. Look for sources of fresh water, such as vines or tree trunks, if necessary."/>
 
-        <!-- Be cautious of wildlife and store food securely. -->
+            <!-- Be cautious of wildlife and store food securely. -->
 
-        <Label
+            <Label
             Text="Be aware of wildlife: Tropical forests are teeming with wildlife. Educate yourself about potentially dangerous animals and their behavior. Take precautions to store food securely and avoid confrontations with wildlife."/>
 
-        <!-- Conserve energy and maintain a positive mindset. -->
+            <!-- Conserve energy and maintain a positive mindset. -->
 
-        <Label
+            <Label
             Text="Conserve energy and stay positive: Rest when needed to conserve energy and avoid exhaustion. Stay positive and mentally focused on survival tasks. Keeping a positive mindset can improve your chances of staying motivated and making rational decisions."/>
 
-        <!-- Back button -->
+            <!-- Back button -->
 
 
-        <Button
+            <Button
              Text="Back" Clicked="BackButton"
              Margin="0,0,0,0"
              BackgroundColor="#02AD62"
              TextColor="White"
              HeightRequest="100"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

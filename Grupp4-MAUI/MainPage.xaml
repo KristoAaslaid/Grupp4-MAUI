@@ -12,24 +12,23 @@
         <!-- Css, so that content wont touch the edges of the screen -->
 
         <VerticalStackLayout
-            Spacing="25"
+            Spacing="20"
             Padding="30,0"
             VerticalOptions="Start">
             
             <!-- Ighter app logo or a calming relaxing picture -->
 
             <Image
-                Source="keep_calm.jpg"
+                Source="survive.jpg"
                 SemanticProperties.Description="Maailm siis kui kõik töötab"
-                HeightRequest="200"
-                Margin="0,50,0,0"
+                HeightRequest="325"
+                Margin="0,20,0,0"
                 HorizontalOptions="Center" />
             
             <!-- Button to navigate to first aid -->
 
             <Button
                 Text="First Aid" Clicked="NavigateToFirstAid"
-                Margin="0,200,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60" />
@@ -38,7 +37,6 @@
 
             <Button
                 Text="Situations" Clicked="NavigateToSituations"
-                Margin="0,0,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
@@ -47,7 +45,6 @@
 
             <Button
                 Text="Compass" Clicked="NavigateToCompass"
-                Margin="0,0,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
@@ -56,7 +53,6 @@
 
             <Button
                 Text="GPS" Clicked="NavigateToGPS"
-                Margin="0,0,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
@@ -65,7 +61,6 @@
 
             <Button
                 Text="Sensors" Clicked="NavigateToSensors"
-                Margin="0,0,0,0"
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
