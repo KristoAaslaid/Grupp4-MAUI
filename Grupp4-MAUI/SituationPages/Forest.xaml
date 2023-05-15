@@ -7,74 +7,73 @@
     <!-- Css, so that content wont touch the edges of the screen -->
 
     <ScrollView>
-
         <VerticalStackLayout
-        Spacing="20"
-        Padding="30,0"
-        VerticalOptions="Start">
+            Spacing="20"
+            Padding="30,0"
+            VerticalOptions="Start">
 
-    <!-- Header in middle of sceen also bigger -->
-        
-        <Label 
-            Text="If you are lost in a Boreal Forest!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center"
-            Padding="0,20,0,0"
-            FontSize="32"/>
+            <!-- Header in middle of sceen also bigger -->
 
-        <!-- Stay calm and assess your surroundings. -->
+            <Label 
+                Text="If you are lost in a Boreal Forest!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Padding="0,20,0,0"
+                FontSize="32"/>
 
-        <Label
+            <!-- Stay calm and assess your surroundings. -->
+
+            <Label
             Text="Stop and assess the situation: Take a moment to calm yourself and evaluate your surroundings. Look for any recognizable landmarks or signs of civilization. This will help you determine the best course of action."/>
 
-        <!-- Build a shelter using natural materials. -->
+            <!-- Build a shelter using natural materials. -->
 
-        <Label
+            <Label
             Text="Build a shelter: Protection from the elements is crucial. Look for natural resources such as fallen trees, branches, or foliage to construct a shelter. A simple lean-to or debris shelter can provide insulation and keep you dry."/>
 
-        <!-- Find a water source and purify the water before drinking. -->
+            <!-- Find a water source and purify the water before drinking. -->
 
-        <Label
+            <Label
             Text="Find a water source: Locate a nearby water source such as a stream, river, or lake. Water is essential for survival, so make sure to boil it or use purification tablets if possible to avoid consuming any harmful bacteria."/>
 
-        <!-- Start a fire for warmth and signaling. -->
+            <!-- Start a fire for warmth and signaling. -->
 
-        <Label
+            <Label
             Text="Start a fire: Fire serves multiple purposes, including warmth, cooking, and signaling for help. Gather dry leaves, twigs, and branches to create a fire. Make sure to build it in a safe location and keep it under control."/>
 
-        <!-- Signal for help using a whistle or visible signals. -->
+            <!-- Signal for help using a whistle or visible signals. -->
 
-        <Label
+            <Label
             Text="Signal for help: If you have any signaling devices such as a whistle or a mirror, use them to attract attention. Create a visible signal using rocks, logs, or other materials that contrast with the surroundings. Three consecutive signals (such as three whistle blasts) is a recognized distress signal."/>
 
-        <!-- Learn about edible plants and forage for food cautiously. -->
+            <!-- Learn about edible plants and forage for food cautiously. -->
 
-        <Label
+            <Label
             Text="Prioritize food and foraging: Familiarize yourself with edible plants and berries in the area, but be cautious as some plants can be poisonous. Look for signs of animal activity or sources of food like insects, small game, or fish if you have access to water and fishing gear."/>
 
-        <!-- Stay oriented using natural navigation methods. -->
+            <!-- Stay oriented using natural navigation methods. -->
 
-        <Label
+            <Label
             Text="Stay oriented: Pay attention to your surroundings and try to maintain a sense of direction. Use natural navigation methods such as observing the sun's position, tracking wind patterns, or identifying prominent landmarks to avoid getting disoriented further."/>
 
-        <!-- Stay warm and conserve energy. -->
+            <!-- Stay warm and conserve energy. -->
 
-        <Label
+            <Label
             Text="Stay warm and conserve energy: Boreal forests can have cold temperatures, especially at night. Keep yourself warm by layering clothing and using insulation from your shelter. Avoid overexertion to conserve energy and prevent sweating, which can lead to hypothermia."/>
 
-        <!-- Maintain a positive mindset and focus on immediate needs. -->
+            <!-- Maintain a positive mindset and focus on immediate needs. -->
         
-        <Label
+            <Label
             Text="Stay positive and focused: Survival situations can be mentally challenging. Maintain a positive mindset, stay focused on your immediate needs, and conserve your resources until help arrives or you find a way to safety."/>
 
-        <!-- Back button -->
+            <!-- Back button -->
 
-        <Button
-             Text="Back" Clicked="BackButton"
-             Margin="0,0,0,0"
-             BackgroundColor="#02AD62"
-             TextColor="White"
-             HeightRequest="100"/>
+            <Button
+                 Text="Back" Clicked="BackButton"
+                 Margin="0,0,0,0"
+                 BackgroundColor="#02AD62"
+                 TextColor="White"
+                 HeightRequest="100"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

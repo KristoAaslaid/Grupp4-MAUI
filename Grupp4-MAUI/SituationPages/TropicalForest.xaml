@@ -7,19 +7,19 @@
     <!-- Css, so that content wont touch the edges of the screen -->
 
     <ScrollView>
-
         <VerticalStackLayout
-        Spacing="20"
-        Padding="30,0"
-        VerticalOptions="Start">
+            Spacing="20"
+            Padding="30,0"
+            VerticalOptions="Start">
 
             <!-- Header in middle of sceen also bigger -->
 
-
             <Label 
-            Text="If you are lost in a Tropical Forest!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+                Text="If you are lost in a Tropical Forest!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                Padding="0,20,0,0"
+                FontSize="32"/>
 
             <!-- Stay calm and assess your situation. -->
 
@@ -68,13 +68,12 @@
 
             <!-- Back button -->
 
-
             <Button
-             Text="Back" Clicked="BackButton"
-             Margin="0,0,0,0"
-             BackgroundColor="#02AD62"
-             TextColor="White"
-             HeightRequest="100"/>
+                 Text="Back" Clicked="BackButton"
+                 Margin="0,0,0,0"
+                 BackgroundColor="#02AD62"
+                 TextColor="White"
+                 HeightRequest="100"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

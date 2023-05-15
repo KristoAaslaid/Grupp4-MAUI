@@ -23,7 +23,7 @@
                 SemanticProperties.Description="Maailm siis kui kõik töötab"
                 HeightRequest="325"
                 Margin="0,20,0,0"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"/>
             
             <!-- Button to navigate to first aid -->
 
@@ -31,7 +31,7 @@
                 Text="First Aid" Clicked="NavigateToFirstAid"
                 BackgroundColor="#02AD62"
                 TextColor="White"
-                HeightRequest="60" />
+                HeightRequest="60"/>
 
             <!-- Button to navigate to situations -->
 
@@ -65,11 +65,6 @@
                 BackgroundColor="#02AD62"
                 TextColor="White"
                 HeightRequest="60"/>
-
-
-
-
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

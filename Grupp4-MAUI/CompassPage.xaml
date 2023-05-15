@@ -5,36 +5,34 @@
              x:Class="Grupp4_MAUI.CompassPage"
              Title="CompassPage">
     <ContentPage.Resources>
-        <drawable:GraphicsDrawable x:Key="drawable" />
+        <drawable:GraphicsDrawable x:Key="drawable"/>
     </ContentPage.Resources>
     <ScrollView>
-    <VerticalStackLayout>
-        <Label
-            x:Name="CompassLabel"
-            Text="Compass still in development"
-            FontSize="24"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        
+        <VerticalStackLayout>
+            <Label
+                x:Name="CompassLabel"
+                Text="Compass still in development"
+                FontSize="24"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
 
-        <!-- <GraphicsView Drawable="{StaticResource drawable}" 
-                      HeightRequest="500"
-                      WidthRequest="320" /> 
-        -->
+            <!-- <GraphicsView Drawable="{StaticResource drawable}" 
+                          HeightRequest="500"
+                          WidthRequest="320" /> 
+            -->
 
-        <Image Source="compass.png"
-               x:Name="CompassImage"
-               HeightRequest="500"
-               WidthRequest="320">
+            <Image 
+                Source="compass.png"
+                x:Name="CompassImage"
+                HeightRequest="500"
+                WidthRequest="320"/>
 
-        </Image>
-
-        <Button
-             Text="To Main Page" Clicked="BackButton"
-             Margin="0,0,0,0"
-             BackgroundColor="#02AD62"
-             TextColor="White"
-             HeightRequest="100"/>
-    </VerticalStackLayout>
+            <Button
+                 Text="To Main Page" Clicked="BackButton"
+                 Margin="0,0,0,0"
+                 BackgroundColor="#02AD62"
+                 TextColor="White"
+                 HeightRequest="100"/>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -4,38 +4,33 @@
              x:Class="Grupp4_MAUI.WeatherPage"
              Title="Current Weather">
     <VerticalStackLayout>
-
         <Label
             x:Name="LocationName"
             FontSize="40"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"/>
 
         <Label
             x:Name="WeatherDescription"
             FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
-            Padding="5"
-            />
+            Padding="5"/>
 
         <Image
             x:Name="WeatherImage"
             VerticalOptions="Center"
             HeightRequest="300"
-            WidthRequest="300"
-            />
+            WidthRequest="300"/>
 
         <Grid RowDefinitions="Auto,Auto"
-              ColumnDefinitions="0.33*,0.33*,0.33*"
-              >
+              ColumnDefinitions="0.33*,0.33*,0.33*">
 
             <Image
                 Grid.Row="0"
                 Grid.Column="0"
                 Source="humidity.png"
-                HeightRequest="25"
-                />
+                HeightRequest="25"/>
         
             <Label
                 Grid.Row="1"
@@ -43,8 +38,7 @@
                 x:Name="HumidityLabel"
                 FontSize="20"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                />
+                HorizontalOptions="Center"/>
 
             <Label
                 Grid.Row="0"
@@ -59,8 +53,7 @@
                 Grid.Row="0"
                 Grid.Column="2"
                 Source="wind.png"
-                HeightRequest="25"
-                />
+                HeightRequest="25"/>
 
             <Label
                 Grid.Row="1"
@@ -68,17 +61,14 @@
                 x:Name="WindLabel"
                 FontSize="20"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                />
+                HorizontalOptions="Center"/>
         </Grid>
-            
+
         <Button
             Text="Back" Clicked="BackButton"
             Margin="0,20,0,0"
             BackgroundColor="#02AD62"
             TextColor="White"
-            HeightRequest="100"
-            />
-            
+            HeightRequest="100"/>
     </VerticalStackLayout>
 </ContentPage>
