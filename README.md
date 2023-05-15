@@ -20,7 +20,7 @@ This is a survival app made in MAUI, which is supposed to help people in despera
 
 ### Figma mockups: https://www.figma.com/file/VYFzAlVUjyZsBEUwwjVtD3/Mobiiliarendus?type=design
 
-## Autorid
+## Authors
 - Kristo Aaslaid
 - Hendrik Oja
 - Reimo Rämman
