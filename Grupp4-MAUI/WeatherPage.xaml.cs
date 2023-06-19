@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Views;
 using Grupp4_MAUI.ViewModel;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -8,6 +9,7 @@ public partial class WeatherPage : ContentPage
 {
 	private double latitude;
 	private double longitude;
+	private Forecast forecastData;
 	public WeatherPage()
 	{
 		InitializeComponent();
@@ -28,7 +30,7 @@ public partial class WeatherPage : ContentPage
         WeatherImage.Source = result.weather[0].fullIconUrl;
 
         // Get forecast data
-        var forecastData = await ApiService.GetForecast(latitude, longitude);
+        forecastData = await ApiService.GetForecast(latitude, longitude);
         forecastList.ItemsSource = new ObservableCollection<ForecastItem>(forecastData.list);
     }
 	// Get the current location of the device
@@ -42,4 +44,22 @@ public partial class WeatherPage : ContentPage
     {
         await Navigation.PopToRootAsync();
     }
+
+	private void OnForecastPressed(object sender, EventArgs e)
+	{
+		var time = (sender as ImageCell).Detail;
+		ForecastItem foundItem = new ForecastItem();
+
+		foreach (var forecastItem in forecastData.list)
+		{
+			var fcTag = forecastItem.time;
+            foundItem = forecastItem;
+            if (time == fcTag)
+			{
+				foundItem = forecastItem;
+				break;
+			}
+		}
+		this.ShowPopup(new WeatherPopup(foundItem));
+	}
 }

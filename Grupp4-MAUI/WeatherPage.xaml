@@ -63,14 +63,15 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"/>
         </Grid>
-        <ListView x:Name="forecastList">
-            <ListView.ItemTemplate>
+        <ListView x:Name="forecastList" >
+            <ListView.ItemTemplate IsScrollingEnabled="True">
                 <DataTemplate>
                     <ImageCell
                         Text="{Binding main.temperature, StringFormat='{0}°C'}"
                         Detail="{Binding time}"
                         DetailColor="Grey"
                         ImageSource="{Binding weather[0].fullIconUrl}"
+                        Tapped="OnForecastPressed"
                     />
 
                 </DataTemplate>

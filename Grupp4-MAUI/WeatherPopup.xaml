@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mct:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mct="clr-namespace:CommunityToolkit.Maui.Views;assembly=CommunityToolkit.Maui"
+    x:Class="Grupp4_MAUI.WeatherPopup"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" Color="Transparent"
+    Size="350, 400"
+>
+    <Frame CornerRadius="10">
+        <VerticalStackLayout >
+            <Label
+                x:Name="LocationName"
+                FontSize="40"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="WeatherDescription"
+                FontSize="20"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Padding="5"/>
+
+            <Image
+                x:Name="WeatherImage"
+                VerticalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100"/>
+
+            <Grid RowDefinitions="Auto,Auto"
+                  ColumnDefinitions="0.33*,0.33*,0.33*">
+
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Source="humidity.png"
+                    HeightRequest="25"/>
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    x:Name="HumidityLabel"
+                    FontSize="20"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="TemperatureLabel"
+                    FontSize="40"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    Padding="10"/>
+
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Source="wind.png"
+                    HeightRequest="25"/>
+
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    x:Name="WindLabel"
+                    FontSize="20"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </Grid>
+        </VerticalStackLayout>
+    </Frame>
+</mct:Popup>
