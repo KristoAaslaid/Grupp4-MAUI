@@ -19,6 +19,7 @@ namespace Grupp4_MAUI.ViewModel
 
         }
 
+        // Get forecast from OpeanWeatherMap API
         public static async Task<Forecast> GetForecast(double latitude, double longitude)
         {
             var httpClient = new HttpClient();

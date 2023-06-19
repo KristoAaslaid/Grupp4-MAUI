@@ -63,6 +63,7 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"/>
         </Grid>
+        <!-- Render the forecast list from data sent from the C# code, bind button to create a popup -->
         <ListView x:Name="forecastList" >
             <ListView.ItemTemplate IsScrollingEnabled="True">
                 <DataTemplate>

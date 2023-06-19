@@ -31,6 +31,7 @@ public partial class WeatherPage : ContentPage
 
         // Get forecast data
         forecastData = await ApiService.GetForecast(latitude, longitude);
+		// Pass the collection made from the data as the item source of our listview
         forecastList.ItemsSource = new ObservableCollection<ForecastItem>(forecastData.list);
     }
 	// Get the current location of the device
@@ -45,6 +46,8 @@ public partial class WeatherPage : ContentPage
         await Navigation.PopToRootAsync();
     }
 
+	// When one of the list items is tapped, compare the time with every element in our saved forecast data
+	// When found, create a popup and pass the forecast data as an argument
 	private void OnForecastPressed(object sender, EventArgs e)
 	{
 		var time = (sender as ImageCell).Detail;
@@ -60,6 +63,7 @@ public partial class WeatherPage : ContentPage
 				break;
 			}
 		}
+		// Show the popup :)
 		this.ShowPopup(new WeatherPopup(foundItem));
 	}
 }

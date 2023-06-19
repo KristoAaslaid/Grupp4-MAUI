@@ -12,6 +12,7 @@ public partial class WeatherPopup : Popup
 		InitializeComponent();
 		fcitm = fc;
 
+        // Get forecast data that's passed to the popup and render
         WeatherDescription.Text = fc.weather[0].description;
         TemperatureLabel.Text = fc.main.temperature + "°C";
         HumidityLabel.Text = fc.main.humidity + "%";
