@@ -56,8 +56,8 @@ public partial class WeatherPage : ContentPage
 		foreach (var forecastItem in forecastData.list)
 		{
 			var fcTag = forecastItem.time;
-            foundItem = forecastItem;
-            if (time == fcTag)
+			foundItem = forecastItem;
+			if (time == fcTag)
 			{
 				foundItem = forecastItem;
 				break;
