@@ -6,9 +6,9 @@ namespace Grupp4_MAUI;
 
 public partial class WeatherPopup : Popup
 {
-	private ForecastItem fcitm;
-	public WeatherPopup(ForecastItem fc)
-	{
+    private ForecastItem fcitm;
+    public WeatherPopup(ForecastItem fc)
+    {
         InitializeComponent();
         fcitm = fc;
 
