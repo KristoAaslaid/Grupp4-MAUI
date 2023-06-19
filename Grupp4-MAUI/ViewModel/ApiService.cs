@@ -23,7 +23,6 @@ namespace Grupp4_MAUI.ViewModel
         {
             var httpClient = new HttpClient();
             var response = await httpClient.GetStringAsync(string.Format("https://api.openweathermap.org/data/2.5/forecast?lat={0}&lon={1}&units=metric&cnt=5&appid=e44051050fea2103eaeca14ebd2f0c14", latitude, longitude));
-            Debug.WriteLine(response);
             return JsonConvert.DeserializeObject<Forecast>(response);
 
         }
