@@ -9,8 +9,8 @@ public partial class WeatherPopup : Popup
 	private ForecastItem fcitm;
 	public WeatherPopup(ForecastItem fc)
 	{
-		InitializeComponent();
-		fcitm = fc;
+        InitializeComponent();
+        fcitm = fc;
 
         // Get forecast data that's passed to the popup and render
         WeatherDescription.Text = fc.weather[0].description;
